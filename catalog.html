@@ -19,9 +19,39 @@
       </nav>
     </header>
     <main>
-<!--Здесь будет форма заказа отеля-->
-      <h1 class=”visually-hadden”>Список отелей
-      </h1>
+      <section class="selection">
+        <h1 class=”visually-hidden”>Выбор отеля
+        </h1>
+        <h2 class="infrastructure">Инфраструктура
+        </h2>
+          <label>
+            <input type="checkbox">Бассейн
+          </label>
+          <label>
+              <input type="checkbox">Парковка
+          </label>
+          <label>
+              <input type="checkbox">Wi-Fi
+          </label>
+          <h2 class="livivng">Тип жилья
+          </h2>
+            <label>
+              <input type="checkbox">Гостиница
+            </label>
+            <label>
+              <input type="checkbox">Мотель
+            </label>
+            <label>
+              <input type="checkbox">Апартаменты
+            </label>
+            <h2 class="price">Стоимость в сутки (P):
+            </h2>
+              <label>
+                  <input type="range" min="0" max="3000">
+                </label>
+              <input type="button" value="Показать">
+      </section>
+<!--Здесь будет результат поиска и сортировка-->
      <section class=”hotels”>
       <ul class=”hotels-list”>
        <li>
