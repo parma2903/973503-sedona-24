@@ -8,7 +8,7 @@
     <header class="main-header">
       <nav class="main-navigation">
         <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="368" height="204" alt="City of Sedona">
+          <img src="img/logo.svg" width="368" height="204" alt="Логотип Седоны">
         </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
@@ -20,34 +20,61 @@
     </header>
     <main>
       <section class="selection">
-        <h1 class="visually-hidden">Выбор отеля</h1>
-        <h2 class="infrastructure">Инфраструктура</h2>
-          <label>
-            <input type="checkbox">Бассейн
-          </label>
-          <label>
-            <input type="checkbox">Парковка
-          </label>
-          <label>
-            <input type="checkbox">Wi-Fi
-          </label>
-          <h2 class="livivng">Тип жилья</h2>
-            <label>
-              <input type="checkbox">Гостиница
-            </label>
-            <label>
-              <input type="checkbox">Мотель
-            </label>
-            <label>
-              <input type="checkbox">Апартаменты
-            </label>
-            <h2 class="price">Стоимость в сутки (P):</h2>
+        <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
+          <h1 class="visually-hidden">Выбор отеля</h1>
+          <h2 class="selection-infrastructure">Инфраструктура</h2>
+          <ul>
+            <li>
               <label>
-                <input type="range" min="0" max="3000">
+                <input type="checkbox" name="pools">Бассейн
               </label>
-              <input type="button" value="Показать">
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="parking">Парковка
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="wi-fi">Wi-Fi
+              </label>
+            </li>
+          </ul>
+          <h2 class="livivng">Тип жилья</h2>
+          <ul>  
+            <li>
+              <label>
+                <input type="checkbox" name="hotel">Гостиница
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="motel">Мотель
+              </label>
+            </li>
+            <li>
+              <label>
+                <input type="checkbox" name="apartment">Апартаменты
+              </label>
+            </li>
+          </ul>
+          <h2 class="price">Стоимость в сутки (P):</h2>
+            <label>
+              <input type="range" min="0" max="3000">
+            </label>
+            <input type="button" value="Показать">
+        </form>
       </section>
-<!--Здесь будет результат поиска и сортировка-->
+      <section class="result">
+        <form class="result-form" action="https://echo.htmlacademy.ru" method="post" oninput="rating.value=rating.value">
+          <p>Найдено:<output name="searching-result">0</output></p>
+          <p>Сортировка:
+            <label><input type="radio" name="sorting" value="price">По цене</label>
+            <label><input type="radio" name="sorting" value="type">По типу</label>
+            <label><input type="radio" name="sorting" value="rating">По рейтингу</label>
+          </p>
+        </form>
+      </section>
       <section class="hotels">
         <ul class="hotels-list">
           <li>
@@ -94,9 +121,9 @@
         <b>#VISITSEDONA</b>
       </p>
       <ul class="footer-social"> 
-        <li> <a class="social-button" href="#">Twitter</a></li>
-        <li> <a class="social-button" href="#">Facebook</a></li>
-        <li> <a class="social-button" href="#">Youtube</a></li>
+        <li> <a class="social-button" aria-label="Страница городка Седона в Twitter" href="#"></a></li>
+        <li> <a class="social-button" aria-label="Страница городка Седона в Facebook" href="#"></a></li>
+        <li> <a class="social-button" aria-label="Канал городка Седона в Youtube"href="#"></a></li>
       </ul>
       <p>
         <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
