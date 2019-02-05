@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Sedona</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -19,51 +22,53 @@
       </nav>
     </header>
     <main class="container">
-      <section class="banner">
-        <img src= "img/background-photo.jpg" width="368" height="204" alt="Вид на прекрасный город Седона">
-      </section>
       <section class="advantages">
-        <h1 class="5_reasons">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p> Рассмотрим 5 причин. По которым Седона круче, чем Гранд Каньон!</p>
+        <h1 class="page-title page-title-big">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p class="page-text page-text-big"> Рассмотрим 5 причин. По которым Седона круче, чем Гранд Каньон!</p>
       </section>
       <section>
-        <h2 class="reason-1">Настоящий городок</h2>
-        <p class="first">-#1-</p>
-        <p class="first-argument">Седона - не аттракцион для туристов, там течёт своя жизнь</p>         
-          <img src= "img/pic1.png" width="368" height="204" alt="Изображение городка">
+        <div class="bgc-blue">
+          <h2 class="page-title page-title-white">Настоящий городок</h2>
+          <p class="page-text page-text-white">-#1-</p>
+          <p class="page-text page-text-white">Седона - не аттракцион для туристов, там течёт своя жизнь</p>         
+            <img src= "img/pic1.png" width="368" height="204" alt="Изображение городка">
+          </div>
 <!--Здесь вставить иконку домика-->
-        <h2 class="house">Жильё</h2>
-        <p class="about-house">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          <h2 class="page-title">Жильё</h2>
+          <p class="page-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
 <!--Здесь вставить иконку еды-->
-        <h2 class="food">Еда</h2>
-        <p class="about-food">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          <h2 class="page-title">Еда</h2>
+          <p class="page-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
 <!--Здесь вставить иконку подарка-->
-        <h2 class="souvenirs">Сувениры</h2>
-        <p class="about-souvenirs">Не только китайского, но и местного производства!</p>
-          <img src= "img/pic2.jpg" width="368" height="204" alt="Мост дьявола">
-        <h2 class="bridge">Там есть мост дьвола</h2>
-        <p class="second">-№2-</p>
-        <p class="second-argument">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-        <h2 class="territory">Небольшая площадь</h2>
-        <p class="third">-№3-</p>
-        <p class="third-argument">Все достопримечательности находятся очень близко</p>
-        <h2 class="road">Красивая дорога</h2>
-        <p class="fourth">-№4-</p>
-        <p class="fourth-argument">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        <h2 class="tourists">Мало туристов</h2>
-        <p class="fifth">-№5-</p>
-        <p class="fifth-argument">Большинство едет в Гранд Каньон и толпится там</p>
+          <h2 class="page-title">Сувениры</h2>
+          <p class="page-text">Не только китайского, но и местного производства!</p>
+          <div class="bgc-blue">
+            <img src= "img/pic2.jpg" width="368" height="204" alt="Мост дьявола">
+          <h2 class="page-title page-title-white">Там есть мост дьвола</h2>
+          <p class="page-text page-text-white">-№2-</p>
+          <p class="page-text page-text-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div> 
+          <h2 class="page-title">Небольшая площадь</h2>
+          <p class="page-text">-№3-</p>
+          <p class="page-text">Все достопримечательности находятся очень близко</p>
+          <h2 class="page-title">Красивая дорога</h2>
+          <p class="page-text">-№4-</p>
+          <p class="page-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          <h2 class="page-title">Мало туристов</h2>
+          <p class="page-text">-№5-</p>
+          <p class="page-text">Большинство едет в Гранд Каньон и толпится там</p>
       </section>
       <section class="order">
-        <h2>Заинтересовались?</h2>
+        <h2 class="order-title">Заинтересовались?</h2>
         <p class="order-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <button type="button" class="order-button" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>  
           <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
             <fieldset>
               <label for="arriving-date">Дата заезда:
-                <input type="date" name="arriving-date" id="arriving-date" value="" placeholder="11.02.2019"> 
+                <input type="text" name="arriving-date" id="arriving-date" value="24 апреля 2017"> 
               </label>
               <label for="leaving-date">Дата выезда:
-                <input type="date" name="leaving-date" id="leaving-date" value="" placeholder="21.02.2019">
+                <input type="text" name="leaving-date" id="leaving-date" value="4 июля 2017">
               </label>
               <label for="adults">Взрослые:
                 <input type="number" name="adults" id="adults" placeholder="2" pattern="[0-9]{2}">
@@ -71,7 +76,7 @@
               <label for="kids">Дети:
                 <input type="number" name="kids" id="kids" placeholder="0" pattern="[0-9]{2}">
               </label>
-              <button type="submit">Найти</button>
+              <button type="submit" class="search-button">Найти</button>
             </fieldset>
           </form>
       </section>
@@ -83,14 +88,14 @@
       </section>
     </main>
     <footer class="main-footer">
-      <p><b>#VISITSEDONA</b></p>
+      <p class="page-title page-title-big"><b>#VISITSEDONA</b></p>
       <ul class="footer-social">
         <li> <a class="social-button" aria-label="Страница городка Седона в Twitter" href="#"></a></li>
         <li> <a class="social-button" aria-label="Страница городка Седона в Facebook" href="#"></a></li>
         <li> <a class="social-button" aria-label="Канал городка Седона в Youtube"href="#"></a></li>
       </ul>
-      <p>
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
+      <p class="page-text">website by
+        <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
       </p>
     </footer>
   </body>

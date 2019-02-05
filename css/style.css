@@ -1,0 +1,271 @@
+body {
+    margin: 0;
+
+    font-family: "PT Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #000000;
+    text-transform: uppercase;
+    
+    background-color: #ffffff;
+    background-image: url("img/background-photo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .main-navigation {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+  
+    background-color: #ffffff;
+  }
+  
+  .site-navigation
+{
+  list-style: none;
+  background-image: url("img/background-photo.jpg");
+}
+
+.site-navigation a
+{
+  color: #000000;
+
+  background-color: #ffffff;
+  background-position: 0 0;
+}
+
+.bgc-blue
+{
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+.page-title
+{
+    text-align: center;
+
+    font-size: 21px;
+    line-height: 21px;
+    font-weight: bold;
+}
+
+.page-title-big
+{
+    line-height: 26px; 
+}
+
+.page-title-white
+{
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.page-text
+{
+    text-align: center;
+
+    color: #333333;
+
+    background-color: #ffffff;
+}
+
+.page-text-white
+{
+    color: #ffffff;
+
+    background-color: #81b3d2;
+}
+
+.order-title
+{
+    text-align: center;
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+}
+
+.order-info
+{
+    text-align: center;
+
+    line-height: 24px;
+}
+
+button.order
+{
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #766357;
+}
+
+.order-form
+{
+    text-align: left;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #000000;
+}
+
+.order-button
+{
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-transform: uppercase;
+
+    background-color: #766357;
+
+}
+
+.search-button
+{
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff; 
+    text-transform: uppercase;
+
+    background-color: #81b3d2;
+}
+
+.selection-title
+{
+    text-align: left;
+    
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: bold;
+    color: #ffffff;
+
+    background-color: #000000
+}
+
+.selection-title-sorting
+{
+    text-align: left;
+    
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    color: #000000;
+
+    background-color: #ffffff
+}
+
+.selection-text
+{
+    text-align: left;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #ffffff;
+
+    background-color: #000000   
+}
+
+.selection-text-sorting
+{
+    text-align: left;
+    
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: normal;
+    color: rgba(0, 0, 0, 0.3);
+
+    background-color: #ffffff
+}
+
+.show-button
+{
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    color: #ffffff; 
+    text-transform: uppercase;
+    border: 1px solid #ffffff:
+
+    background-color: #000000;
+}
+
+.selection-title
+{
+    list-style: none;
+    background-color: #000000;
+  }
+  
+  .site-navigation a
+  {
+    color: #ffffff;
+  
+    background-color: #000000;
+  }
+
+.hotels-list
+{
+    list-style: none;
+}
+  .hotel-name
+{
+        text-align: left;
+        
+        font-size: 21px;
+        line-height: 26px;
+        font-weight: bold;
+        color: #000000;
+    
+        background-color: #ffffff;  
+}
+    
+.hotel-type,
+.hotel-price
+{
+    text-align: left;
+    
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #333333;
+
+    background-color: #ffffff;  
+}
+
+.button
+{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: bold;
+        color: #ffffff; 
+        text-transform: uppercase;
+    
+        background-color: #81b3d2;   
+}
+
+.button-dark
+{
+        text-align: center;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: bold;
+        color: #ffffff; 
+        text-transform: uppercase;
+    
+        background-color: #766357;   
+}
