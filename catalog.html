@@ -26,7 +26,7 @@
         <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
           <h1 class="visually-hidden">Выбор отеля</h1>
           <h2 class="selection-title">Инфраструктура</h2>
-          <ul>
+          <ul class="selection-list">
             <li>
               <label>
                 <input type="checkbox" name="pools" class="selection-text">Бассейн
@@ -44,7 +44,7 @@
             </li>
           </ul>
           <h2 class="selection-title">Тип жилья</h2>
-          <ul>  
+          <ul class="selection-list">  
             <li>
               <label>
                 <input type="checkbox" name="hotel" class="selection-text">Гостиница
@@ -69,19 +69,19 @@
               <input type="number" placeholder="3000" value="3000">
             </label>
             <input type="range" min="0" max="3000">
-            <input type="button" class="show-button" value="Показать" >
+            <a class="show" href="#">Показать</a>
         </form>
       </section>
       <section class="result">
-          <p class="selection-title">Найдено:<output name="searching-result">0</output></p>
-          <p class="selection-title selection-title-sorting">Сортировка:
+          <p class="selection-title selection-title-sorting">Найдено:<output name="searching-result">3</output></p>
+          <p class="selection-title selection-title-sorting-small">Сортировка:
             <label><a href="#" class="selection-text-sorting">По цене</a></label>
             <label><a href="#" class="selection-text-sorting">По типу</a></label>
             <label><a href="#" class="selection-text-sorting">По рейтингу</a></label>
           </p>
           <p>
-            <a href="#"><img src="icon-down-dir.svg"></a></label>
-            <a href="#"><img src="icon-up-dir.svg"></a></label>
+            <a href="#" class="down-up"><img src="icon-down-dir.svg"></a></label>
+            <a href="#" class="down-up"><img src="icon-up-dir.svg"></a></label>
           </p>
         </form>
       </section>
@@ -90,14 +90,14 @@
           <li>
             <article class="hotel-amara">
               <img src="img/amara-logo.png" width="368" height="204" alt="Amara Resort & SPA">
-              <h2 class="hotel-name">Amara resort & spa</h2>
+              <a class="hotel-name" href="catalog-item.html">Amara resort & spa</a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price"> от 4000 р.</p>
               <a class="button" href="catalog-item.html">Подробнее</a>
               <a class="button button-dark" href="booking.html">Забронировать</a>
              </article>
           </li>
-          <ul>
+          <ul class="icons">
             <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
             <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
             <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
@@ -107,7 +107,7 @@
           <li>
             <article class="hotel-desert">
               <img src="img/desert-logo.png" width="368" height="204" alt="Desert Quail Inn">
-              <h2 class="hotel-name"> Desert Quail Inn </h2>
+              <a class="hotel-name" href="catalog-item.html">Desert Quail Inna</a>
               <p class="hotel-type">Мотель</p>
               <p class="hotel-price"> от 3000 р. </p>
               <a class="button" href="catalog-item.html">Подробнее</a>
@@ -123,14 +123,14 @@
           <li>
             <article class="hotel-villas">
               <img src="img/villas-logo.png" width="368" height="204" alt="Villas at Poco Diablo">
-              <h2 class="hotel-name"> Villas at Poco Diablo </h2>
+              <a class="hotel-name" href="catalog-item.html">Villas at Poco Diablo</a>
               <p class="hotel-type">Апартаменты</p>
               <p class="hotel-price"> от 2000 р. </p>
               <a class="button" href="catalog-item.html">Подробнее</a>
               <a class="button button-dark" href="booking.html">Забронировать</a>
             </article>
           </li>
-          <ul>
+          <ul class="icons">
             <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
             <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
             <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
@@ -145,12 +145,12 @@
         <b>#VISITSEDONA</b>
       </p>
       <ul class="footer-social"> 
-        <li> <a class="social-button" aria-label="Страница городка Седона в Twitter" href="#"></a></li>
-        <li> <a class="social-button" aria-label="Страница городка Седона в Facebook" href="#"></a></li>
-        <li> <a class="social-button" aria-label="Канал городка Седона в Youtube"href="#"></a></li>
+        <li> <a class="button social-button" aria-label="Страница городка Седона в Twitter" href="#">Twitter</a></li>
+        <li> <a class="button social-button" aria-label="Страница городка Седона в Facebook" href="#">Facebook</a></li>
+        <li> <a class="button social-button" aria-label="Канал городка Седона в Youtube"href="#">Youtube</a></li>
       </ul>
       <p class="page-text">website by
-        <a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
+        <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
       </p>
     </footer>
   </body>
