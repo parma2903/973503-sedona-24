@@ -10,12 +10,14 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo" href="index.html">
-          <img src="img/logo.svg" width="368" height="204" alt="Логотип Седоны">
-        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="foto_video.html">Фото и видео</a></li>
+          <li>
+            <a class="main-header-logo" href="index.html">
+              <img src="img/logo.svg" width="368" height="204" alt="Логотип Седоны">
+            </a>
+          </li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a>Гостиницы</a></li>
         </ul>
@@ -23,6 +25,7 @@
     </header>
     <main>
       <section class="selection">
+          <img src= "img/filter-background.png" width="368" height="204" alt="Размытый вид на Седону">
         <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
           <h1 class="visually-hidden">Выбор отеля</h1>
           <h2 class="selection-title">Инфраструктура</h2>
@@ -69,7 +72,7 @@
               <input type="number" placeholder="3000" value="3000">
             </label>
             <input type="range" min="0" max="3000">
-            <a class="show" href="#">Показать</a>
+            <button class="show" href="#">Показать</a>
         </form>
       </section>
       <section class="result">
@@ -88,55 +91,56 @@
       <section class="hotels">
         <ul class="hotels-list">
           <li>
-            <article class="hotel-amara">
+            <article class="hotel-card">
               <img src="img/amara-logo.png" width="368" height="204" alt="Amara Resort & SPA">
               <a class="hotel-name" href="catalog-item.html">Amara resort & spa</a>
               <p class="hotel-type">Гостиница</p>
               <p class="hotel-price"> от 4000 р.</p>
+              <ul class="icons-stars">
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><p class="hotel-rating">Рейтинг: 8,5 </p></li>
+              </ul>
               <a class="button" href="catalog-item.html">Подробнее</a>
               <a class="button button-dark" href="booking.html">Забронировать</a>
              </article>
           </li>
-          <ul class="icons">
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><p class="hotel-rating">Рейтинг: 8,5 </p></li>
-          </ul>
           <li>
-            <article class="hotel-desert">
+            <article class="hotel-card">
               <img src="img/desert-logo.png" width="368" height="204" alt="Desert Quail Inn">
               <a class="hotel-name" href="catalog-item.html">Desert Quail Inna</a>
               <p class="hotel-type">Мотель</p>
               <p class="hotel-price"> от 3000 р. </p>
+              <ul class="icons-stars">
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><p class="hotel-rating">Рейтинг: 8,5 </p></li>
+              </ul>
               <a class="button" href="catalog-item.html">Подробнее</a>
               <a class="button button-dark" href="booking.html">Забронировать</a>
             </article>
           </li>
-          <ul>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="3 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="3 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="3 звезды"></li>
-            <li><p class="hotel-rating">Рейтинг: 8,9 </p></li>
-          </ul>
           <li>
-            <article class="hotel-villas">
+            <article class="hotel-card">
               <img src="img/villas-logo.png" width="368" height="204" alt="Villas at Poco Diablo">
               <a class="hotel-name" href="catalog-item.html">Villas at Poco Diablo</a>
               <p class="hotel-type">Апартаменты</p>
               <p class="hotel-price"> от 2000 р. </p>
+              <ul class="icons-stars">
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
+                <li><p class="hotel-rating">Рейтинг: 9,2 </p></li>
+              </ul>
               <a class="button" href="catalog-item.html">Подробнее</a>
               <a class="button button-dark" href="booking.html">Забронировать</a>
             </article>
           </li>
-          <ul class="icons">
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><img src="img/icon-star.svg" width="368" height="204" alt="4 звезды"></li>
-            <li><p class="hotel-rating">Рейтинг: 9,2 </p></li>
-          </ul>
         </ul>
       </section>
     </main>

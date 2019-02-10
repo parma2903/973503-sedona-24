@@ -9,9 +9,6 @@ body {
     text-transform: uppercase;
     
     background-color: #ffffff;
-    background-image: url("img/background-photo.jpg");
-    background-position: top center;
-    background-repeat: no-repeat;
 }
 
 a {
@@ -35,16 +32,20 @@ a {
     color: #000000;
 }
 
-.site-navigation a:hover {
+.site-navigation a[href]:hover {
     color: #81b3d2;
 }
 
-.site-navigation a:focus {
-    color: #rgba(0, 0, 0, 0.3);
+.site-navigation a[href]:active {
+    color: rgba(0, 0, 0, 0.3);
 }
 
-.site-navigation a:active {
-    color: red;
+.site-navigation a[href] {
+    color: #000000;
+}
+
+.site-navigation a {
+    color: rgb(245, 229, 229);
 }
 
 .bgc-blue {
@@ -108,8 +109,8 @@ a {
     background-color: #669ec0;
 }
 
-.button:focus,
-.button:focus {
+.button:active,
+.button:active {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5496bd;
 }
@@ -129,8 +130,8 @@ a {
     background-color: #604e43;
 }
 
-.order-button:focus,
-.button-dark:focus {
+.order-button:active,
+.button-dark:active {
     background-color: #503e33;
 }
 .order-form {
@@ -149,7 +150,7 @@ a {
     background-color: #ebebeb;
 }
 
-.order-form input:focus {
+.order-form input:active {
     border: 2px solid #ebebeb;
     background-color: #ffffff;
 }
@@ -185,12 +186,12 @@ a {
 
     background-color: transparent;
 }
-.hotel-name:focus {
+.hotel-name:active {
     color: #bdbbbc;
 }
 
-.button-site:focus,
-.button-hotel-name:focus {
+.button-site:active,
+.button-hotel-name:active {
     color: #bdbbbc;
 
     background-color: transparent;
@@ -210,7 +211,7 @@ a {
     color: #ffffff;
 }
 
-.selection-text {
+.selection-list {
     text-align: left;
     color: #ffffff;
 }
@@ -244,7 +245,7 @@ a {
     border-bottom: 1px dotted #81b3d2;
 }
 
-.selection-text-sorting:focus {
+.selection-text-sorting:active {
     color: #000000;
 }
 
@@ -282,6 +283,66 @@ a {
     color: #333333;
 }
 
-.icons {
+.icons-stars {
     list-style: none;
 }
+
+/* Сеточные стили */
+
+html,
+body {
+    min-width: 1200px;
+    min-height: 2197px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.main-header {
+    min-height: 71px;
+}
+
+.site-navigation {
+    margin: 0;
+    padding: 0;
+    min-height: 71px;
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+    margin-bottom: -15px;
+}
+
+.main-header-logo {
+    width: 140px;
+    height: 71px;
+}
+
+.advantages {
+    display: flex;
+    min-width: 1200px;
+    min-height: 733px;
+    background-image: ('img/background-photo.jpg');
+    flex-direction: column;
+    align-items: center;
+}
+
+.bgc-blue {
+    display: flex;
+    min-height: 256px;
+}
+
+.text-container {
+padding-left: 60px;
+padding-top: 46px;
+padding-right: 60px;
+padding-bottom: 64px;
+}
+
+.container-for-three {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    min-width: 400px;
+}
+
