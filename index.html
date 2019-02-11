@@ -10,24 +10,24 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
+        </a>
         <ul class="site-navigation">
           <li><a href="info.html">Информация</a></li>
           <li><a href="foto_video.html">Фото и видео</a></li>
-          <li>
-            <a class="main-header-logo">
-              <img src="img/logo.svg" width="368" height="204" alt="Логотип Седоны">
-            </a>
-          </li>
           <li><a href="map.html">Карта штата</a></li>
           <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main class="container">
+    <main>
       <section class="advantages">
-        <img src= "img/background-photo.jpg" width="1200" height="733" alt="Вид на Седону">
-        <h1 class="page-title page-title-big">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
-        <p class="page-text page-text-big"> Рассмотрим 5 причин. По которым Седона круче, чем Гранд Каньон!</p>
+
+        
+          <h1 class="page-title page-title-big">Седона – небольшой городок в Аризоне, заслуживающий большего!</h1>
+          <p class="page-text page-text-big"> Рассмотрим 5 причин. По которым Седона круче, чем Гранд Каньон!</p>
+        
       </section>
       <section>
         <div class="bgc-blue">
@@ -39,15 +39,21 @@
             <img src= "img/pic1.png" width="800" height="256" alt="Изображение городка">
         </div>
         <div class="container-for-three">
+          <div class="text-container">
 <!--Здесь вставить иконку домика-->
-          <h2 class="page-title">Жильё</h2>
-          <p class="page-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            <h2 class="page-title">Жильё</h2>
+            <p class="page-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+          </div>
+          <div class="text-container">
 <!--Здесь вставить иконку еды-->
-          <h2 class="page-title">Еда</h2>
-          <p class="page-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            <h2 class="page-title">Еда</h2>
+            <p class="page-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+          </div>
+          <div class="text-container">
 <!--Здесь вставить иконку подарка-->
-          <h2 class="page-title">Сувениры</h2>
-          <p class="page-text">Не только китайского, но и местного производства!</p>
+            <h2 class="page-title">Сувениры</h2>
+            <p class="page-text">Не только китайского, но и местного производства!</p>
+          </div>
         </div>
         <div class="bgc-blue">
           <img src= "img/pic2.jpg" width="800" height="256" alt="Мост дьявола">
@@ -57,37 +63,57 @@
               <p class="page-text page-text-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
         </div> 
-          <h2 class="page-title">Небольшая площадь</h2>
-          <p class="page-text">-№3-</p>
-          <p class="page-text">Все достопримечательности находятся очень близко</p>
-          <h2 class="page-title">Красивая дорога</h2>
-          <p class="page-text">-№4-</p>
-          <p class="page-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          <h2 class="page-title">Мало туристов</h2>
-          <p class="page-text">-№5-</p>
-          <p class="page-text">Большинство едет в Гранд Каньон и толпится там</p>
+        <div class="container-for-three bgc-gray">
+          <div class="text-container">
+            <h2 class="page-title">Небольшая площадь</h2>
+            <p class="page-text">-№3-</p>
+            <p class="page-text">Все достопримечательности находятся очень близко</p>
+          </div>
+          <div class="text-container">
+            <h2 class="page-title">Красивая дорога</h2>
+            <p class="page-text">-№4-</p>
+            <p class="page-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+          </div>
+          <div class="text-container">
+            <h2 class="page-title">Мало туристов</h2>
+            <p class="page-text">-№5-</p>
+            <p class="page-text">Большинство едет в Гранд Каньон и толпится там</p>
+          </div>
+        </div>
       </section>
       <section class="order">
-        <h2 class="order-title">Заинтересовались?</h2>
-        <p class="order-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-          <button type="button" class="button order-button" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>  
+        <div class="long-text-container">
+          <h2 class="order-title">Заинтересовались?</h2>
+          <p class="order-info">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        </div> 
+        <div class="container-for-form"> 
+          <div class="button-container-for-form">
+           <button type="button" class="button order-button" value="Поиск гостиницы в Седоне">Поиск гостиницы в Седоне</button>  
+          </div>
           <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
-            <fieldset>
+            <div class="text-container-for-form">
               <label for="arriving-date" class="order-info-form">Дата заезда:
                 <input type="text" name="arriving-date" id="arriving-date" value="24 апреля 2017"> 
               </label>
+            </div>
+            <div class="text-container-for-form">
               <label for="leaving-date" class="order-info-form">Дата выезда:
                 <input type="text" name="leaving-date" id="leaving-date" value="4 июля 2017">
               </label>
+            </div>
+            <div class="text-container-for-form">
               <label for="adults" class="order-info-form">Взрослые:
                 <input type="number" name="adults" id="adults" placeholder="2" pattern="[0-9]{2}">
               </label>
+            </div>
+            <div class="text-container-for-form">
               <label for="kids" class="order-info-form">Дети:
                 <input type="number" name="kids" id="kids" placeholder="0" pattern="[0-9]{2}">
               </label>
-              <button type="submit" class="button search-button">Найти</button>
-            </fieldset>
+            </div>
+            <button type="submit" class="button search-button">Найти</button>
           </form>
+        </div>
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
@@ -96,16 +122,20 @@
         </p>
       </section>
     </main>
-    <footer class="main-footer">
-      <p class="page-title page-title-big"><b>#VISITSEDONA</b></p>
-      <ul class="footer-social">
-        <li> <a class="button social-button" aria-label="Страница городка Седона в Twitter" href="#"></a></li>
-        <li> <a class="button social-button" aria-label="Страница городка Седона в Facebook" href="#"></a></li>
-        <li> <a class="button social-button" aria-label="Канал городка Седона в Youtube"href="#"></a></li>
-      </ul>
-      <p class="page-text">website by
-        <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
-      </p>
+    <footer class="main-footer map">
+      <div class="container">
+        <p class="page-title page-title-big"><b>#VISITSEDONA</b></p>
+        <ul class="footer-social">
+            <li> <a class="button social-button" aria-label="Страница городка Седона в Twitter" href="#">Twitter</a></li>
+            <li> <a class="button social-button" aria-label="Страница городка Седона в Facebook" href="#">Facebook</a></li>
+            <li> <a class="button social-button" aria-label="Канал городка Седона в Youtube"href="#">Youtube</a></li>
+        </ul>
+        <div class="footer-page-text">
+          <p class="page-text">website by
+            <a class="button-site" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy </a>
+          </p>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

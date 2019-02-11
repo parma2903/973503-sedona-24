@@ -15,7 +15,7 @@
           <li><a href="foto_video.html">Фото и видео</a></li>
           <li>
             <a class="main-header-logo" href="index.html">
-              <img src="img/logo.svg" width="368" height="204" alt="Логотип Седоны">
+              <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
             </a>
           </li>
           <li><a href="map.html">Карта штата</a></li>
@@ -25,9 +25,9 @@
     </header>
     <main>
       <section class="selection">
-          <img src= "img/filter-background.png" width="368" height="204" alt="Размытый вид на Седону">
         <form class="selection-form" action="https://echo.htmlacademy.ru" method="post">
           <h1 class="visually-hidden">Выбор отеля</h1>
+          <div class="column-first">
           <h2 class="selection-title">Инфраструктура</h2>
           <ul class="selection-list">
             <li>
@@ -45,9 +45,11 @@
                 <input type="checkbox" name="wi-fi" class="selection-text">Wi-Fi
               </label>
             </li>
-          </ul>
-          <h2 class="selection-title">Тип жилья</h2>
-          <ul class="selection-list">  
+            </ul>
+            </div>
+            <div class="column-second">
+            <h2 class="selection-title">Тип жилья</h2>
+            <ul class="selection-list">  
             <li>
               <label>
                 <input type="checkbox" name="hotel" class="selection-text">Гостиница
@@ -64,15 +66,18 @@
               </label>
             </li>
           </ul>
+          </div>
+          <div class="column-third">
           <h2 class="selection-title">Стоимость в сутки (P):</h2>
             <label class="selection-title">от
               <input type="number" placeholder="0" value="0">
             </label>
             <label class="selection-title">до
               <input type="number" placeholder="3000" value="3000">
-            </label>
+              </label>
             <input type="range" min="0" max="3000">
             <button class="show" href="#">Показать</a>
+          </div>
         </form>
       </section>
       <section class="result">
@@ -83,8 +88,8 @@
             <label><a href="#" class="selection-text-sorting">По рейтингу</a></label>
           </p>
           <p>
-            <a href="#" class="down-up"><img src="icon-down-dir.svg"></a></label>
-            <a href="#" class="down-up"><img src="icon-up-dir.svg"></a></label>
+            <a href="#" class="down-up"><img src="img/icon-down-dir.svg"></a></label>
+            <a href="#" class="down-up"><img src="img/icon-up-dir.svg"></a></label>
           </p>
         </form>
       </section>
