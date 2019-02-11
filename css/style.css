@@ -38,8 +38,6 @@ a {
 
 .site-navigation a[href]:active {
     color: rgba(0, 0, 0, 0.3);
-    margin: 0;
-    padding: 0;
 }
 
 .site-navigation a[href] {
@@ -200,10 +198,10 @@ a {
 }
 .selection-list {
     list-style: none;
-}
-
-.selection{
-    background-color: red;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    color: #ffffff;
 }
 
 .selection-title {
@@ -214,10 +212,6 @@ a {
     color: #ffffff;
 }
 
-.selection-list {
-    text-align: left;
-    color: #ffffff;
-}
 
 .selection-title-sorting {
     text-align: left;
@@ -312,9 +306,9 @@ body {
     padding: 15px 0;
 }
 
-.site-navigation a[] {
+.site-navigation a {
     display: inline-block;
-    padding: 0;
+    padding: 15px 0;
 }
 
 .main-header-logo {
@@ -325,12 +319,8 @@ body {
 }
 
 .advantages {
-    display: flex;
-    flex-direction: column;
-    height: 733px;
-    background-image: url("../img/background-photo.jpg") no-repeat center;
     align-items: center;
-    margin-bottom: 300px;
+    margin-bottom: 56px;
 }
 
 .bgc-blue {
@@ -387,12 +377,14 @@ padding-bottom: 64px;
     display: flex;
 }
 .page-title-big {
-    width: 136px;
-    margin-right: 256px;
-    margin-left: 132px;
-    padding-top: 31px;
+    margin: 0 auto;
 }
 
+.main-footer .page-title-big {
+    width: 136px;
+    margin-left: 132px;
+    margin-top: 51px;
+}
 .footer-social {
     display: flex;
     width: 150px;
@@ -405,25 +397,110 @@ padding-bottom: 64px;
     padding-top: 39px; 
 }
 
-.selection {
+.container-for-selection {
     margin: 0;
     padding: 0;
+    padding-left: 72px;
+    padding-right: 74px;
+    background: url("../img/filter-background.png") no-repeat center;
     display: flex;
-    justify-content: flex-start;
-    background-image: url("../img/filter-background-photo.png") no-repeat center; 
-    height: 562px;
+ 
 }
 
 .column-first {
+    display: flex;
+    flex-direction: column;
     width: 139px;
+    padding-left: 72px;
     padding-right: 115px;
-    }
+}
 
 .column-second {
+    display: flex;
     width: 139px;
+    flex-direction: column;
 }
     
 .column-third {
-    width: 139px;
-    padding-left: auto;
+    display: flex;
+    width: 314px;
+    margin-left: auto;
+    flex-direction: column;
+    padding-bottom: 36px;
+}
+
+.result {
+    display: flex;
+    align-items: baseline;
+    padding-left: 72px;
+    padding-top: 31px;
+    padding-right: 73px;
+}
+
+.selection-title-sorting {
+    padding-right: 49px;
+    padding-bottom: 33px;
+}
+
+.selection-title-sorting-small {
+    padding-right: 505px;
+}
+
+.hotel-card {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 150px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.hotel-card-second-column {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding-left: 30px;
+    padding-right: 522px;
+}
+
+.hotel-card-third-column {
+    width: 90px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
+.icons-stars {
+    display: inline-block;
+}
+
+.type-price {
+    display: inline-block;
+}
+
+.container-for-buttons {
+    display: inline-block;
+}
+
+.inner-footer {
+    margin: 0;
+    background-color: #ffffff;
+    opacity: 0.9;
+}
+
+.inner-footer .container {
+    display: flex;
+    align-items: baseline;
+}
+
+    
+.inner-footer .page-title-big {
+    width: 136px;
+    margin-top: 51px;
+    padding-left: 132px;
+    padding-right: 256px;
 }
