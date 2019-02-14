@@ -16,8 +16,15 @@ a {
 }
 
 img {
-    max-width: 1005;
+    max-width: 1200px;
     height: auto;
+}
+
+html,
+body {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -45,14 +52,26 @@ input[type="radio"].visually-hidden {
 
     background-color: #ffffff;  
 }
-  
+
 .site-navigation {
     list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .site-navigation a {
     background-position: 0 0;
     color: #000000;
+    display: block;
+    padding: 15px 0;
+}
+
+.site-navigation a[href] {
+    display: block;
+    padding: 15px 0;
 }
 
 .site-navigation a[href]:hover {
@@ -70,55 +89,84 @@ input[type="radio"].visually-hidden {
 .site-navigation a {
     color: rgb(245, 229, 229);
 }
-.logo-picture {
-    z-index: 9;
-    position: relative;
+
+.main-header-logo {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    z-index: 3;
 }
-/*- почему заходит под баннер, а не сверху него печатается? Ведь индекс у него задан больше*/
 
 .banner {
     position: relative;
+    overflow: hidden;
+    height: 564px;
 }
 
 .banner-piture {
     position: relative;
-    z-index: 1;
 }
 
-.welcome {
-    content:"";
-
+.banner:before {
+    background: url(../img/welcome.svg) no-repeat center;
     position: absolute;
-
-    left: 370px;
-    top: 76px;
-    z-index: 9;
+    content: "";
+    z-index: 10;
+    top: 132px;
+    left: 0;
+    width: 100%;
+    height: 353px;
 }
 
-.white-zone {
-    content:"";
-
+.banner:after {
+    background: url(../img/white-zone-marker.svg) no-repeat center;
     position: absolute;
-
-    top: 450px;
-    z-index: 9;
+    content:"";
+    z-index: 10;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 59px;
 }
-
-/*.banner::after {
-    background-image: 
-      url("../img/welcome.svg"),
-      url("../img/white-zone-marker.svg");
-    position: absolute, absolute;
-    top: 132px, 506px;
-    left: 371px, 0;
-    width: 459px, 1201px;
-    height: 353px, 58px;   Этот код не срабатывает. Почему- не могу понять.
-}*/
+.advantages {
+    margin: 0;
+    padding: 0;
+    padding-bottom: 56px;
+    padding-top: 60px;
+}
 
 .bgc-blue {
     color: #ffffff;
 
     background-color: #81b3d2;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-container-1 {
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-top: 46px;
+    padding-right: 60px;
+    padding-bottom: 64px;
+}
+
+.text-container-2 {
+    box-sizing: border-box;
+    padding-left: 73px;
+    padding-top: 161px;
+    padding-right: 60px;
+    padding-bottom: 85px;
+}
+
+.text-container-3 {
+    box-sizing: border-box;
+    padding-left: 48px;
+    padding-top: 49px;
+    padding-right: 49px;
+    padding-bottom: 65px;
 }
 
 .page-title {
@@ -145,6 +193,65 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 }
 
+.container-for-three {
+    display: flex;
+    justify-content: space-between;
+}
+.add-icon-first {
+    position: relative;
+}
+
+.add-icon-first:before {
+    position: absolute;
+
+    content: " ";
+
+    background: url("../img/icon-house.svg") no-repeat center;
+    height: 72px;
+    width: 72px;
+    left: 104px;
+    top: -104px;
+    z-index: 10;
+}
+
+.add-icon-second {
+    position: relative;
+}
+
+.add-icon-second:before {
+    position: absolute;
+
+    content: " ";
+
+    background: url("../img/icon-food.svg") no-repeat center;
+    height: 72px;
+    width: 72px;
+    left: 104px;
+    top: -104px;
+    z-index: 10;
+}
+
+.add-icon-third {
+    position: relative;
+}
+
+.add-icon-third:before {
+    position: absolute;
+
+    content: " ";
+
+    background: url("../img/icon-present.svg") no-repeat center;
+    height: 72px;
+    width: 72px;
+    left: 104px;
+    top: -104px;
+    z-index: 10;
+}
+
+.bgc-gray {
+    background-color: #eeeeee;
+}
+
 .order-title {
     text-align: center;
     font-size: 30px;
@@ -152,10 +259,57 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
 }
 
+.long-text-container {
+    padding-bottom: 57px;
+    width: 434px;
+    margin: 0 auto;
+}
+
 .order-info {
     text-align: center;
 
     line-height: 24px;
+}
+
+.container-for-form {
+    display: flex;
+    flex-direction: column;
+    width: 568px;
+    margin: 0 auto;
+}
+
+.order-form {
+    display: flex;
+
+    flex-wrap: wrap;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 55px;
+}
+.text-container-for-form {
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.age {
+    display: flex;
+}
+
+.age .text-container-for-form input {
+    box-sizing: border-box;
+    width: 100px;
+}
+
+.text-container-for-form input {
+    box-sizing: border-box;
+    width: 200px;
+    padding-top: 2px;
+    padding-left: 10px;
+    padding-bottom: 2px;
+    padding-right: 10px;
+    text-align: center;
+
+    font: inherit;
 }
 
 .button {
@@ -214,22 +368,48 @@ input[type="radio"].visually-hidden {
     background-color: #503e33;
 }
 
-.button-site {
+.map {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.main-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 0;
+    padding: 40px 100px;
+    background: rgba(255, 255, 255, 0.9);
+    padding-top: -120px;
+}
+
+.main-footer .page-title-big {
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer .footer-social {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.main-footer .page-text {
+    padding: 0;
+    margin: 0;
+}
+
+.button-site:hover {
     width: 115px;
     height: 41px;
     background-color: #81b3d2;
 }
 
-.button-site {
+.button-site:active {
     width: 115px;
     height: 41px;
-    background-color: #669ec0;
-}
-
-.button-site {
-    width: 115px;
-    height: 41px;
-    background-color: #5496bd;
+    background-color: #bdbbbc;
 }
 
 .button-site:active path{
@@ -311,6 +491,72 @@ input[type="radio"].visually-hidden {
     background-color: transparent;
 }
 
+.container-for-selection {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding-right: 74px;
+    padding-left: 72px;
+    padding-top: 36px;
+    padding-bottom: 36px;
+    background: url("../img/filter-background.png") no-repeat center;
+}
+
+.column-first {
+    padding-right: 115px;
+}
+
+.column-third {
+    width: 328px;
+    margin-left: auto;
+}
+
+.range {
+    display: none;
+}
+
+.container-for-range{
+    display: block;
+}
+
+.result {
+    display: flex;
+    align-items: baseline;
+    padding-left: 72px;
+    padding-top: 31px;
+    padding-right: 73px;
+}
+
+.selection-title-sorting {
+    padding-right: 49px;
+}
+
+.up-and-down{
+    margin-left: auto;
+}
+
+.hotel-card {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    padding: 30px 72px;
+}
+
+.hotel-card-second-column {
+    margin: 0;
+    padding: 0;
+    padding-left: 30px;
+}
+
+.hotel-card-third-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+}
+
 .hotel-name {
     color: black;
 }
@@ -319,6 +565,7 @@ input[type="radio"].visually-hidden {
 
     background-color: transparent;
 }
+
 .hotel-name:active {
     color: #bdbbbc;
 }
@@ -340,7 +587,7 @@ input[type="radio"].visually-hidden {
     position: relative;
 }
 
-.selection-list .selection-text::before {
+/*.selection-list .selection-text::before {
     content:"";
 
     position: absolute;
@@ -350,8 +597,9 @@ input[type="radio"].visually-hidden {
     background-color: red;
     left: -20px;
     top: -5px;
-    /*background-image: url("img/checkbox-off.svg");*/
-}
+    background: url("../img/checkbox-off.svg") no-repeat center;
+} 
+Пройти курс селекторы часть 3 и переделать этот пункт. 13 минута в видео Жени*/
 
 .selection-list .selection-text:hover::before {
     content:"";
@@ -438,236 +686,6 @@ input[type="radio"].visually-hidden {
 .icons-stars {
     list-style: none;
     padding: 0;
-}
-
-/* Сеточные стили */
-
-html,
-body {
-    width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.site-navigation {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-
-.site-navigation a[href] {
-    display: block;
-    padding: 15px 0;
-}
-
-.site-navigation a {
-    display: block;
-    padding: 15px 0;
-}
-
-.main-header-logo {
-    position: absolute;
-    left: 50%;
-    top: 0;
-    transform: translateX(-50%);
-}
-
-.advantages {
-    position: relative;
-    align-items: center;
-    padding-bottom: 61px;
-    padding-top: 61px;
-    margin-bottom: 56px;
-    background-color: #ffffff;
-    margin-top: -300px; 
-    z-index: 8;
-}
-
-.bgc-blue {
-    display: flex;
-    justify-content: space-between;
-}
-
-.text-container {
-box-sizing: border-box;
-width: 33%;
-padding-left: 60px;
-padding-top: 46px;
-padding-right: 60px;
-padding-bottom: 63px;
-}
-
-.container-for-three {
-    display: flex;
-    justify-content: space-between;
-}
-
-.bgc-gray {
-    background-color: #eeeeee;
-}
-
-.long-text-container {
-    padding-bottom: 57px;
-    width: 434px;
-    margin: 0 auto;
-}
-
-.container-for-form {
-    display: flex;
-    flex-direction: column;
-    width: 568px;
-    margin: 0 auto;
-}
-
-.order-form {
-    display: flex;
-
-    flex-wrap: wrap;
-    padding-left: 55px;
-    padding-right: 55px;
-    padding-bottom: 55px;
-}
-.text-container-for-form {
-    display: flex;
-    padding-bottom: 10px;
-}
-
-.age {
-    display: flex;
-}
-
-.age .text-container-for-form input {
-    box-sizing: border-box;
-    width: 100px;
-}
-
-.text-container-for-form input {
-    box-sizing: border-box;
-    width: 200px;
-    padding-top: 2px;
-    padding-left: 10px;
-    padding-bottom: 2px;
-    padding-right: 10px;
-    text-align: center;
-
-    font: inherit;
-}
-.map {
-    display: block;
-    margin: 0;
-    padding: 0;
-}
-
-.main-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin: 0;
-    padding: 40px 100px;
-    background: rgba(255, 255, 255, 0.9);
-    padding-top: -120px;
-}
-
-.main-footer .page-title-big {
-    padding: 0;
-    margin: 0;
-}
-
-.main-footer .footer-social {
-    display: flex;
-    padding: 0;
-    margin: 0;
-}
-
-.main-footer .page-text {
-    padding: 0;
-    margin: 0;
-}
-
-.container-for-selection {
-    display: flex;
-    justify-content: space-between;
-    margin: 0;
-    padding-right: 74px;
-    padding-left: 72px;
-    padding-top: 36px;
-    padding-bottom: 36px;
-    background: url("../img/filter-background.png") no-repeat center;
-}
-
-.column-first {
-    padding-right: 115px;
-}
-
-/*.selection-list::before {
-     content: "dssvsd";
-
-     position: absolute;
-     top: 30px;
-
-     width: 27px;
-     height: 23px;
-
-     background-image: url("img/checkbox-off.svg");
-     background-repeat: no-repeat;
-     background-position: 0 0;
-    }
-*/
-
-.column-third {
-    width: 328px;
-    margin-left: auto;
-}
-
-.range {
-    display: none;
-}
-
-.container-for-range{
-    display: block;
-}
-
-.result {
-    display: flex;
-    align-items: baseline;
-    padding-left: 72px;
-    padding-top: 31px;
-    padding-right: 73px;
-}
-
-.selection-title-sorting {
-    padding-right: 49px;
-}
-
-.up-and-down{
-    margin-left: auto;
-}
-
-.hotel-card {
-    display: flex;
-    margin: 0;
-    padding: 0;
-    padding: 30px 72px;
-}
-
-.hotel-card-second-column {
-    margin: 0;
-    padding: 0;
-    padding-left: 30px;
-}
-
-.hotel-card-third-column {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-    margin-left: auto;
-}
-
-.icons-stars {
     display: flex;
 }
 
@@ -694,7 +712,6 @@ padding-bottom: 63px;
     background: rgba(255, 255, 255, 0.9);
     padding-top: -120px;
 }
-
   
 .inner-footer .page-title-big {
     padding: 0;
