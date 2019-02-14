@@ -169,6 +169,30 @@ input[type="radio"].visually-hidden {
     padding-bottom: 65px;
 }
 
+.text-container-4 {
+    box-sizing: border-box;
+    padding-left: 95px;
+    padding-top: 50px;
+    padding-right: 97px;
+    padding-bottom: 63px;
+}
+
+.text-container-5 {
+    box-sizing: border-box;
+    padding-left: 69px;
+    padding-top: 50px;
+    padding-right: 69px;
+    padding-bottom: 64px;
+}
+
+.text-container-6 {
+    box-sizing: border-box;
+    padding-left: 77px;
+    padding-top: 50px;
+    padding-right: 77px;
+    padding-bottom: 64px;
+}
+
 .page-title {
     text-align: center;
 
