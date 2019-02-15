@@ -404,7 +404,12 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-items: baseline;
     margin: 0;
-    padding: 40px 100px;
+/*    padding: 40px 100px;
+Жень, посмотри, пожалуйста, почему у контейнера для футера правая граница идёт по тексту WEBSITE BY, а не по 
+картинке? Из-за этого пока меняю границы иначе картинка выходит из контейнера */
+    padding-left: 100px;
+    padding-top: 40px;
+    padding-right: 224px;
     background: rgba(255, 255, 255, 0.9);
     padding-top: -120px;
 }
@@ -424,24 +429,41 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
 }
+.page-text {
+    position: relative;
+}
 
-.button-site:hover {
+.button-site {
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    content: "";
     width: 115px;
     height: 41px;
-    background-color: #81b3d2;
+    left: 82px;
+    top: -15px;
+}
+.button-site:hover {
+    font: inherit;
+    width: 115px;
+    height: 41px;
+    color: #81b3d2;
+
+    background-color: transparent;
 }
 
 .button-site:active {
     width: 115px;
     height: 41px;
-    background-color: #bdbbbc;
-}
+    color: #bdbbbc;
 
-.button-site:active path{
-    fill: rgba(255, 255, 255, 0.3);
+    background-color: transparent;
 }
 
 .social-button {
+    margin: 0;
+    padding: 0;
+    margin-left: 6px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -506,12 +528,6 @@ input[type="radio"].visually-hidden {
 .button-hotel-name {
     font: inherit;
     color: #000000;
-
-    background-color: transparent;
-}
-
-.button-site:hover {
-    color: #81b3d2;
 
     background-color: transparent;
 }
@@ -602,6 +618,21 @@ input[type="radio"] {
 
 .up-and-down{
     margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+    width: 34px;
+}
+
+.up-down:hover {
+    width: 11px;
+    height: 10px;
+    color: #000000; 
+}
+
+.up-down:active {
+    width: 11px;
+    height: 10px;
+    color: #81b3d2; 
 }
 
 .hotel-card {
@@ -639,7 +670,6 @@ input[type="radio"] {
     color: #bdbbbc;
 }
 
-.button-site:active,
 .button-hotel-name:active {
     color: #bdbbbc;
 
