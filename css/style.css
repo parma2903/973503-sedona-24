@@ -53,6 +53,10 @@ input[type="radio"].visually-hidden {
     background-color: #ffffff;  
 }
 
+.main-header {
+    position: relative;
+    z-index: 9;
+}
 .site-navigation {
     list-style: none;
     margin: 0;
@@ -60,6 +64,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
 .site-navigation a {
@@ -90,6 +96,30 @@ input[type="radio"].visually-hidden {
     color: rgb(245, 229, 229);
 }
 
+.left-nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+.left-nav li:last-child {
+    margin-right: 26px;
+}
+
+.right-nav {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+}
+
+.right-nav li:first-child {
+    margin-left: 28px;
+}
+
 .main-header-logo {
     position: absolute;
     left: 50%;
@@ -101,8 +131,8 @@ input[type="radio"].visually-hidden {
 .banner {
     position: relative;
     overflow: hidden;
-    height: 564px;
-    margin-top: -26px;
+    height: 591px;
+    margin-top: -82px;
 }
 
 .banner-piture {
@@ -114,7 +144,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     content: "";
     z-index: 10;
-    top: 101px;
+    top: 158px;
     left: 2px;
     width: 100%;
     height: 353px;
@@ -125,16 +155,17 @@ input[type="radio"].visually-hidden {
     position: absolute;
     content:"";
     z-index: 10;
-    bottom: 0px;
+    bottom: -1px;
     left: 0;
     width: 100%;
-    height: 57px;
+    height: 58px;
 }
 .advantages {
     margin: 0;
     padding: 0;
-    padding-bottom: 56px;
+    padding-bottom: 57px;
     padding-top: 60px;
+    padding: 47px 300px 37px;
 }
 
 .bgc-blue {
@@ -148,34 +179,125 @@ input[type="radio"].visually-hidden {
 
 .text-container-1 {
     box-sizing: border-box;
-    padding-left: 60px;
-    padding-top: 46px;
-    padding-right: 60px;
-    padding-bottom: 64px;
+    padding-left: 64px;
+    padding-top: 31px;
+    padding-right: 45px;
+    padding-bottom: 43px;
+    width: 33.3%;
+}
+
+.page-title {
+    text-align: center;
+
+    font-size: 21px;
+    font-weight: bold;
+}
+
+.page-title-white {
+    color: #ffffff;
+    padding-right: 18px;
+}
+
+.container-number {
+    margin: 23px 0;
+}
+
+.page-text {
+    text-align: center;
+    color: #333333;
+}
+
+.page-text-white {
+    color: #ffffff;
+}
+
+
+.container-for-three {
+    display: flex;
+    justify-content: space-between;
 }
 
 .text-container-2 {
     box-sizing: border-box;
-    padding-left: 73px;
-    padding-top: 161px;
-    padding-right: 60px;
-    padding-bottom: 85px;
+    padding-top: 143px;
+    padding-bottom: 67px;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 33.3%;
+}
+
+.add-icon-first {
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.add-icon-first:before {
+    position: absolute;
+
+    content: " ";
+
+    background: url("../img/icon-house.svg") no-repeat center;
+    height: 72px;
+    width: 72px;
+    z-index: 10;
+    left: 50%;
+    top: -102px;
+    transform: translateX(-50%);
+
+}
+
+.add-icon-second {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.add-icon-second:before {
+    position: absolute;
+
+    content: " ";
+
+    background: url("../img/icon-food.svg") no-repeat center;
+    height: 72px;
+    width: 72px;
+    left: 150px;
+    top: -101px;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.add-icon-third {
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.add-icon-third:before {
+    position: absolute;
+
+    content: " ";
+
+    background: url("../img/icon-present.svg") no-repeat center;
+    height: 72px;
+    width: 72px;
+    left: 150px;
+    top: -101px;
+    transform: translateX(-50%);
+    z-index: 10;
 }
 
 .text-container-3 {
     box-sizing: border-box;
-    padding-left: 48px;
-    padding-top: 49px;
-    padding-right: 49px;
-    padding-bottom: 65px;
+    padding-left: 59px;
+    padding-top: 143px;
+    padding-right: 24px;
+    padding-bottom: 67px;
 }
 
 .text-container-4 {
     box-sizing: border-box;
-    padding-left: 95px;
-    padding-top: 50px;
-    padding-right: 97px;
-    padding-bottom: 63px;
+    padding-left: 59px;
+    padding-top: 143px;
+    padding-right: 24px;
+    padding-bottom: 67px;
 }
 
 .text-container-5 {
@@ -194,28 +316,12 @@ input[type="radio"].visually-hidden {
     padding-bottom: 64px;
 }
 
-.page-title {
-    text-align: center;
-
-    font-size: 21px;
-    font-weight: bold;
-}
-
 .page-title-big {
     line-height: 26px; 
 }
 
-.page-title-white {
-    color: #ffffff;
-}
-
-.page-text {
-    text-align: center;
-    color: #333333;
-}
-
-.page-text-white {
-    color: #ffffff;
+.advantages-title {
+    margin-bottom: 30px;
 }
 
 .container-for-three {
@@ -223,59 +329,13 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 }
 
-.add-icon-first {
-    position: relative;
-}
-
-.add-icon-first:before {
-    position: absolute;
-
-    content: " ";
-
-    background: url("../img/icon-house.svg") no-repeat center;
-    height: 72px;
-    width: 72px;
-    left: 104px;
-    top: -104px;
-    z-index: 10;
-}
-
-.add-icon-second {
-    position: relative;
-}
-
-.add-icon-second:before {
-    position: absolute;
-
-    content: " ";
-
-    background: url("../img/icon-food.svg") no-repeat center;
-    height: 72px;
-    width: 72px;
-    left: 104px;
-    top: -104px;
-    z-index: 10;
-}
-
-.add-icon-third {
-    position: relative;
-}
-
-.add-icon-third:before {
-    position: absolute;
-
-    content: " ";
-
-    background: url("../img/icon-present.svg") no-repeat center;
-    height: 72px;
-    width: 72px;
-    left: 104px;
-    top: -104px;
-    z-index: 10;
-}
-
 .bgc-gray {
     background-color: #eeeeee;
+    margin-bottom: 50px;
+}
+
+.page-title-text {
+    padding-right: 18px;
 }
 
 .order-title {
@@ -286,7 +346,7 @@ input[type="radio"].visually-hidden {
 }
 
 .long-text-container {
-    padding-bottom: 57px;
+    padding-bottom: 30px;
     width: 434px;
     margin: 0 auto;
 }
@@ -302,28 +362,39 @@ input[type="radio"].visually-hidden {
     flex-direction: column;
     width: 568px;
     margin: 0 auto;
+    position: relative;
 }
 
 .order-form {
     display: flex;
 
+    border: none;
+    padding-top: 60px;
     flex-wrap: wrap;
     padding-left: 55px;
-    padding-right: 55px;
+    padding-right: 47px;
     padding-bottom: 55px;
+    position: absolute;
+    background: white;
+    top: 100%;
 }
 .text-container-for-form {
     display: flex;
-    padding-bottom: 10px;
+    padding-bottom: 40px;
 }
 
 .age {
     display: flex;
+    padding-bottom: 15px;
 }
 
 .age .text-container-for-form input {
     box-sizing: border-box;
     width: 100px;
+}
+
+.adults {
+    padding-right: 104px;
 }
 
 .text-container-for-form input {
@@ -352,7 +423,6 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
     border: none;
     padding: 7px 17px;
-    margin-right: 6px;
 }
 
 .button:hover,
@@ -367,11 +437,12 @@ input[type="radio"].visually-hidden {
 }
 
 .order-button {
-    padding: 35px 130px;
+    padding: 31px 130px;
 }
 
 .search-button {
-    padding: 20px 196px;
+    padding: 16px 196px;
+    text-transform: uppercase;
 }
 
 .button-dark,
@@ -405,14 +476,11 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
     align-items: baseline;
     margin: 0;
-/*    padding: 40px 100px;
-Жень, посмотри, пожалуйста, почему у контейнера для футера правая граница идёт по тексту WEBSITE BY, а не по 
-картинке? Из-за этого пока меняю границы иначе картинка выходит из контейнера */
-    padding-left: 100px;
+    padding-left: 132px;
     padding-top: 40px;
     padding-right: 224px;
     background: rgba(255, 255, 255, 0.9);
-    padding-top: -120px;
+    margin-top: -134px;
 }
 
 .main-footer .page-title-big {
@@ -424,6 +492,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     padding: 0;
     margin: 0;
+    padding-left: 20px;
+    padding-top: 3px;
 }
 
 .main-footer .page-text {
@@ -442,7 +512,7 @@ input[type="radio"].visually-hidden {
     width: 115px;
     height: 41px;
     left: 82px;
-    top: -15px;
+    top: -10px;
 }
 .button-site:hover {
     font: inherit;
@@ -493,10 +563,6 @@ input[type="radio"].visually-hidden {
 
 .social-button:active path{
     fill: rgba(255, 255, 255, 0.3);
-}
-
-.order-form {
-    border: none;
 }
 
 .order-form input {
