@@ -163,9 +163,8 @@ input[type="radio"].visually-hidden {
 .advantages {
     margin: 0;
     padding: 0;
-    padding-bottom: 57px;
-    padding-top: 60px;
     padding: 47px 300px 37px;
+    margin-bottom: 3px;
 }
 
 .bgc-blue {
@@ -175,6 +174,7 @@ input[type="radio"].visually-hidden {
 
     display: flex;
     justify-content: space-between;
+    margin-bottom: 3px;
 }
 
 .text-container-1 {
@@ -284,38 +284,6 @@ input[type="radio"].visually-hidden {
     z-index: 10;
 }
 
-.text-container-3 {
-    box-sizing: border-box;
-    padding-left: 59px;
-    padding-top: 143px;
-    padding-right: 24px;
-    padding-bottom: 67px;
-}
-
-.text-container-4 {
-    box-sizing: border-box;
-    padding-left: 59px;
-    padding-top: 143px;
-    padding-right: 24px;
-    padding-bottom: 67px;
-}
-
-.text-container-5 {
-    box-sizing: border-box;
-    padding-left: 69px;
-    padding-top: 50px;
-    padding-right: 69px;
-    padding-bottom: 64px;
-}
-
-.text-container-6 {
-    box-sizing: border-box;
-    padding-left: 77px;
-    padding-top: 50px;
-    padding-right: 77px;
-    padding-bottom: 64px;
-}
-
 .page-title-big {
     line-height: 26px; 
 }
@@ -331,7 +299,7 @@ input[type="radio"].visually-hidden {
 
 .bgc-gray {
     background-color: #eeeeee;
-    margin-bottom: 50px;
+    margin-bottom: 55px;
 }
 
 .page-title-text {
@@ -346,7 +314,7 @@ input[type="radio"].visually-hidden {
 }
 
 .long-text-container {
-    padding-bottom: 30px;
+    padding-bottom: 31px;
     width: 434px;
     margin: 0 auto;
 }
@@ -369,9 +337,9 @@ input[type="radio"].visually-hidden {
     display: flex;
 
     border: none;
-    padding-top: 60px;
+    padding-top: 57px;
     flex-wrap: wrap;
-    padding-left: 55px;
+    padding-left: 58px;
     padding-right: 47px;
     padding-bottom: 55px;
     position: absolute;
@@ -380,38 +348,35 @@ input[type="radio"].visually-hidden {
 }
 .text-container-for-form {
     display: flex;
-    padding-bottom: 40px;
+    padding-bottom: 32px;
 }
 
 .age {
     display: flex;
-    padding-bottom: 15px;
+    padding-bottom: 23px;
 }
 
 .age .text-container-for-form input {
     box-sizing: border-box;
-    width: 100px;
+    width: 114px;
+    margin-left: 30px;
+    text-align: center;
 }
 
 .adults {
-    padding-right: 104px;
+    padding-right: 58px;
 }
 
 .text-container-for-form input {
     box-sizing: border-box;
-    width: 200px;
-    padding-top: 2px;
-    padding-left: 10px;
-    padding-bottom: 2px;
-    padding-right: 10px;
+    width: 346px;
+    padding: 5px 10px;
     text-align: center;
 
     font: inherit;
 }
 
 .button {
-    display: inline-blocnk;
-
     font: inherit;
 
     text-align: center;
@@ -441,7 +406,7 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
-    padding: 16px 196px;
+    padding: 17px 196px;
     text-transform: uppercase;
 }
 
@@ -512,8 +477,9 @@ input[type="radio"].visually-hidden {
     width: 115px;
     height: 41px;
     left: 82px;
-    top: -10px;
+    top: -13px;
 }
+
 .button-site:hover {
     font: inherit;
     width: 115px;
@@ -541,6 +507,7 @@ input[type="radio"].visually-hidden {
     width: 46px;
     height: 48px;
     background-color: #81b3d2;
+    box-sizing: border-box;
 }
 
 .social-button:hover {
@@ -571,6 +538,7 @@ input[type="radio"].visually-hidden {
     border: none;
     background-color: #f2f2f2;
     font-weight: normal;
+    margin-left: 18px;
 }
 
 .order-form input:hover {
@@ -587,6 +555,21 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
 }
 
+.order-info-form-calendar {
+    position: relative;
+    z-index: 1;
+}
+
+.order-info-form-calendar:after {
+    position: absolute;
+    content: "";
+    background: url("../img/calendar.svg") no-repeat center;
+    top: 8px;
+    left: 428px;
+    z-index: 10;
+    width: 21px;
+    height: 22px;
+}
 .footer-social {
     list-style: none;
 }
@@ -605,8 +588,8 @@ input[type="radio"].visually-hidden {
     margin: 0;
     padding-right: 74px;
     padding-left: 72px;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding-top: 13px;
+    padding-bottom: 6px;
     background: url("../img/filter-background.png") no-repeat center;
 }
 
@@ -618,38 +601,31 @@ input[type="radio"] {
 .selection-list label {
     display: block;
     position: relative;
-    padding-bottom: 36px;
+    padding-bottom: 25px;
 }
 
-.selection-option label:after {
+.checkbox-icon {
     content: "";
     display: block;
     width: 27px;
     height: 23px;
     position: absolute;
     top: 0;
-    left: -35px;
+    left: -42px;
+    top: -1px;
     background: url("../img/checkbox-off.svg") no-repeat center;
 }
 
-.selection-option input[type=checkbox]:checked + label:after {
+input:checked + .checkbox-icon {
     background: url("../img/checkbox-on.svg") no-repeat center;
 }
 
-.selection-option input[type=checkbox]:disabled + label:after {
-    background: url("../img/checkbox-on-disabled.svg") no-repeat center;
-}
-
-.selection-option input[type=checkbox]:disabled/*:not(:checked) + label:after*/ {
-    opacity: 0.5;
-}
-
 .column-first {
-    padding-right: 115px;
+    padding-right: 124px;
 }
 
 .column-third {
-    width: 328px;
+    width: 318px;
     margin-left: auto;
 }
 
@@ -657,14 +633,22 @@ input[type="radio"] {
     margin: 0;
     padding: 0;
     display: flex;
-    width: 314px;
     height: 32px;
+    border: 2px solid white;
+    border-radius: 2px;
+    margin-top: -15px;
+    margin-left: 2px;
 }
 
 .selection-title input {
     background-color: transparent;
     text-align: center;
+
     color: #ffffff;
+    border: none;
+    width: 137px;
+    padding-top: 7px;
+    padding-left: 19px;
 }
 
 .range {
@@ -675,8 +659,10 @@ input[type="radio"] {
     display: flex;
     align-items: baseline;
     padding-left: 72px;
-    padding-top: 31px;
+    padding-top: 21px;
     padding-right: 73px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid gray;
 }
 
 .selection-title-sorting {
@@ -705,14 +691,34 @@ input[type="radio"] {
 .hotel-card {
     display: flex;
     margin: 0;
-    padding: 0;
     padding: 30px 72px;
+    border-bottom: 1px solid gray;
 }
 
 .hotel-card-second-column {
     margin: 0;
     padding: 0;
     padding-left: 30px;
+}
+
+.hotel-info {
+    margin-top: 7px;
+    display: flex;
+    justify-content: space-between;
+    padding-right: 79px;
+}
+
+.wrapper-for-buttons {
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+}
+
+.more-info,
+.book {
+    font-size: 14px;
+    margin-right: 2px;
+    padding: 5px 17px;
 }
 
 .hotel-card-third-column {
@@ -727,6 +733,7 @@ input[type="radio"] {
 .hotel-name {
     color: black;
 }
+
 .hotel-name:hover {
     color: #81b3d2;
 
@@ -746,36 +753,12 @@ input[type="radio"] {
     list-style: none;
     margin: 0;
     padding: 0;
-    padding-left: 30px;
+    padding-left: 40px;
     color: #ffffff;
 }
 
 .selection-list .selection-text {
     position: relative;
-}
-
-/*.selection-list .selection-text::before {
-    content:"";
-
-    position: absolute;
-
-    width: 27px;
-    height: 23px;
-    background-color: red;
-    left: -20px;
-    top: -5px;
-    background: url("../img/checkbox-off.svg") no-repeat center;
-} 
-Пройти курс селекторы часть 3 и переделать этот пункт. 13 минута в видео Жени*/
-
-.selection-list .selection-text:hover::before {
-    content:"";
-    position: absolute;
-    width: 27px;
-    height: 23px;
-    background-color: green;
-    left: -20px;
-    background-image: url("img/checkbox-off.svg");
 }
 
 .selection-title {    
@@ -784,6 +767,13 @@ input[type="radio"] {
     color: #ffffff;
 }
 
+.selection-title-form {
+    padding-bottom: 12px;
+}
+
+.selection-title-form-third-column {
+    padding-left: 4px;
+}
 
 .selection-title-sorting {
     text-align: left;
@@ -791,6 +781,9 @@ input[type="radio"] {
     font-size: 21px;
     line-height: 26px;
     color: #000000;
+    margin: 0;
+    padding: 0;
+    padding-right: 48px;
 }
 
 .selection-title-sorting-small {
@@ -803,6 +796,7 @@ input[type="radio"] {
     font-size: 12px;
     line-height: 18px;
     color: rgba(0, 0, 0, 0.3);
+    margin-left: 36px;
 }
 
 .selection-text-sorting:hover {
@@ -824,8 +818,12 @@ input[type="radio"] {
     background-color: transparent;
     padding: 11px 33px;
     color: white;
-    margin-left: 85px;
-    margin-top: 58px;
+    margin-left: 87px;
+    margin-top: 54px;
+    text-transform: uppercase;
+    padding-left: 36px;
+    padding-top: 9px;
+    padding-bottom: 9px;
 }
 
 .show:hover {
@@ -838,6 +836,7 @@ input[type="radio"] {
 .hotels-list {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .hotel-name {
@@ -845,6 +844,8 @@ input[type="radio"] {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+    display: block;
+    margin-top: -5px;
 }
     
 .hotel-type,
@@ -856,11 +857,17 @@ input[type="radio"] {
 .icons-stars {
     list-style: none;
     padding: 0;
+    margin: 0;
     display: flex;
+    justify-content: flex-end;
 }
 
 .margin-for-stars {
-    margin-right: 10px;
+    margin-right: 6px;
+}
+
+.margin-for-stars:first-child {
+    margin-left: 23px;  
 }
 
 .margin-for-stars:last-child {
@@ -870,17 +877,21 @@ input[type="radio"] {
 .hotel-rating {
     padding: 0;
     margin: 0;
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: #666666;
+    padding-right: 13px;
+    padding-top: 5px;
+    padding-left: 16px;
+    padding-bottom: 2px;
 }
 
 .inner-footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
     margin: 0;
-    padding: 40px 100px;
-    background: rgba(255, 255, 255, 0.9);
-    padding-top: -120px;
+    padding-top: 35px;
+    padding-right: 224px;
+    padding-left: 132px;
 }
   
 .inner-footer .page-title-big {
@@ -892,9 +903,15 @@ input[type="radio"] {
     display: flex;
     padding: 0;
     margin: 0;
+    padding-left: 21px;
+    padding-top: 2px;
 }
 
 .inner-footer .page-text {
     padding: 0;
     margin: 0;
+}
+
+.inner-footer .button-site {
+    top: -14px;
 }
