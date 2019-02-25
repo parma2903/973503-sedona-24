@@ -107,12 +107,12 @@
             <div class="age">
               <div class="text-container-for-form">
                 <label for="adults" class="order-info-form adults">Взрослые:
-                <input type="number" name="adults" id="adults" placeholder="2" pattern="[0-9]{2}">
+                <input type="text" name="adults" id="adults" placeholder="2" pattern="[0-9]{2}">
                 </label>
               </div>
               <div class="text-container-for-form">
                 <label for="kids" class="order-info-form">Дети:
-                <input type="number" name="kids" id="kids" placeholder="0" pattern="[0-9]{2}">
+                <input type="text" name="kids" id="kids" placeholder="0" pattern="[0-9]{2}">
                 </label>
               </div>
            </div>
@@ -173,5 +173,14 @@
         </a>
       </p>
     </footer>
+    <script>
+      var link = document.querySelector(".order-button");
+      var popup = document.querySelector(".order-form");
+
+      link.addEventListener("click", function (evt) {
+        evt.preventDefault();
+        popup.classList.toggle("order-form-show");
+        });
+    </script>
   </body>
 </html>

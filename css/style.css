@@ -113,7 +113,7 @@ input[type="radio"].visually-hidden {
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .right-nav li:first-child {
@@ -335,6 +335,7 @@ input[type="radio"].visually-hidden {
 
 .order-form {
     display: flex;
+    display: none;
 
     border: none;
     padding-top: 57px;
@@ -346,6 +347,11 @@ input[type="radio"].visually-hidden {
     background: white;
     top: 100%;
 }
+
+.order-form-show {
+    display: flex;
+}
+
 .text-container-for-form {
     display: flex;
     padding-bottom: 32px;
@@ -649,6 +655,23 @@ input:checked + .checkbox-icon {
     width: 137px;
     padding-top: 7px;
     padding-left: 19px;
+
+}
+.selection-title-line {
+    position: relative;
+}
+
+.selection-title-line:after {
+    content: "";
+
+    position: absolute;
+    background-color: #ffffff;
+    width: 2px;
+    height: 22px;
+    top: 5px;
+    right: 0px;
+    z-index: 10;
+    border-radius: 5px;
 }
 
 .range {
