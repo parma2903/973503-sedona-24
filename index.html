@@ -44,7 +44,7 @@
             <p class="page-text page-text-white container-number">—№1—</p>
             <p class="page-text page-text-white">Седона - не аттракцион для туристов,<br>там течёт своя жизнь</p>
           </div>         
-            <img src= "img/pic1.png" width="800" height="256" alt="Изображение городка">
+          <img src= "img/pic1.png" width="800" height="256" alt="Изображение городка">
         </div>
         <div class="container-for-three">
           <div class="text-container-2">
@@ -62,11 +62,11 @@
         </div>
         <div class="bgc-blue">
           <img src= "img/pic2.jpg" width="800" height="256" alt="Мост дьявола">
-            <div class="text-container-1">
-              <h2 class="page-title page-title-white">Там есть<br>мост дьвола</h2>
-              <p class="page-text page-text-white container-number">—№2—</p>
-              <p class="page-text page-text-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            </div>
+          <div class="text-container-1">
+            <h2 class="page-title page-title-white">Там есть<br>мост дьвола</h2>
+            <p class="page-text page-text-white container-number">—№2—</p>
+            <p class="page-text page-text-white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
         </div> 
         <div class="container-for-three bgc-gray">
           <div class="text-container text-container-1">
@@ -96,12 +96,12 @@
           <form class="order-form" action="https://echo.htmlacademy.ru" method="post">
             <div class="text-container-for-form">
               <label for="arriving-date" class="order-info-form order-info-form-calendar">Дата заезда:
-              <input type="text" name="arriving-date" id="arriving-date" value="24 апреля 2017"> 
+              <input type="text" name="arriving-date" id="arriving-date" value="24 АПРЕЛЯ 2017"> 
               </label>
             </div>
             <div class="text-container-for-form">
               <label for="leaving-date" class="order-info-form order-info-form-calendar">Дата выезда:
-              <input type="text" name="leaving-date" id="leaving-date" value="4 июля 2017">
+              <input type="text" name="leaving-date" id="leaving-date" value="4 ИЮЛЯ 2017">
               </label>
             </div>
             <div class="age">
@@ -122,9 +122,7 @@
       </section>
       <section class="map">
         <h2 class="visually-hidden">Карта Седоны</h2>
-        <p class="map">
-          <img src="img/map.jpg" width="1200" height="593" alt="Городо Седона на карте">
-        </p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52385.13565747692!2d-111.83015810420495!3d34.8544438157001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1551158761358" width="1200" height="593" frameborder="0" style="border:0" allowfullscreen></iframe>
       </section>
     </main>
     <footer class="main-footer">
@@ -173,14 +171,6 @@
         </a>
       </p>
     </footer>
-    <script>
-      var link = document.querySelector(".order-button");
-      var popup = document.querySelector(".order-form");
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.toggle("order-form-show");
-        });
-    </script>
+    <script src="js/popup.js"></script>
   </body>
 </html>
