@@ -66,8 +66,8 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding-left: 70px;
-    padding-right: 70px;
+    /*padding-left: 70px;
+    padding-right: 70px;*/
 }
 
 .site-navigation a {
@@ -101,13 +101,13 @@ input[type="radio"].visually-hidden {
 .left-nav {
     list-style: none;
     display: flex;
+    justify-content: space-between;
     padding: 0;
     margin: 0;
-    justify-content: space-between;
 }
 
-.left-nav li:last-child {
-    margin-right: 26px;
+.left-nav li:first-child {
+    margin-left: 70px;
 }
 
 .right-nav {
@@ -118,8 +118,12 @@ input[type="radio"].visually-hidden {
     justify-content: space-between;
 }
 
-.right-nav li:first-child {
-    margin-left: 28px;
+.right-nav li:last-child {
+    margin-right: 70px;
+}
+
+.nav-element {
+    width: 265px;
 }
 
 .main-header-logo {
@@ -331,9 +335,8 @@ input[type="radio"].visually-hidden {
 }
 
 .order-form {
-    display: flex;
     display: none;
-
+        
     border: none;
     padding-top: 56px;
     flex-wrap: wrap;
@@ -343,7 +346,10 @@ input[type="radio"].visually-hidden {
     position: absolute;
     background: white;
     top: 100%;
+    box-shadow: 0 0 50px black;
 }
+
+
 
 .order-form-show {
     display: flex;
@@ -367,7 +373,21 @@ input[type="radio"].visually-hidden {
 }
 
 .adults {
+    position: relative;
     margin-right: 58px;
+}
+
+.adults:before {
+    content: "";
+
+    position: absolute;
+    background-color: #a9a9a9;
+    width: 12px;
+    height: 3px;
+    top: 18px;
+    right: 88px;
+    z-index: 10;
+    border-radius: 5px;
 }
 
 .text-container-for-form input {
@@ -562,21 +582,44 @@ input[type="radio"].visually-hidden {
     font-weight: bold;
 }
 
-.order-info-form-calendar {
+.text-container-for-form {
     position: relative;
     z-index: 1;
 }
 
-.order-info-form-calendar:after {
+.calendar {
     position: absolute;
     content: "";
-    background: url("../img/calendar.svg") no-repeat center;
+    top: 8px;
+    left: 428px;
+    z-index: 10;
+    width: 21px;
+    height: 22px;
+    color: #cacaca;
+}
+
+.calendar:hover {
+    position: absolute;
+    content: "";
+    color: #000000;
     top: 8px;
     left: 428px;
     z-index: 10;
     width: 21px;
     height: 22px;
 }
+
+.calendar:active {
+    position: absolute;
+    content: "";
+    color: #81b3d2;
+    top: 8px;
+    left: 428px;
+    z-index: 10;
+    width: 21px;
+    height: 22px;
+}
+
 .footer-social {
     list-style: none;
 }
@@ -618,13 +661,22 @@ input[type="radio"] {
     height: 23px;
     position: absolute;
     top: 0;
-    left: -42px;
+    left: -41px;
     top: -1px;
     background: url("../img/checkbox-off.svg") no-repeat 0 0;
 }
 
 input:checked + .checkbox-icon {
     background: url("../img/checkbox-on.svg") no-repeat 0 0;
+
+}
+
+input:disabled + .checkbox-icon {
+    background: url("../img/checkbox-off-disabled.svg") no-repeat 0 0;
+}
+
+input:checked:disabled + .checkbox-icon {
+    background: url("../img/checkbox-on-disabled.svg") no-repeat 0 0;
 }
 
 .column-first {
@@ -670,7 +722,7 @@ input:checked + .checkbox-icon {
     width: 2px;
     height: 22px;
     top: 5px;
-    right: 0px;
+    right: -3px;
     z-index: 10;
     border-radius: 5px;
 }
@@ -693,11 +745,17 @@ input:checked + .checkbox-icon {
     padding-right: 49px;
 }
 
-.up-and-down{
+.up-and-down {
+    font: inherit;
+
     margin-left: auto;
     display: flex;
     justify-content: space-between;
     width: 34px;
+}
+
+.up-down {
+    color: #cacaca;
 }
 
 .up-down:hover {
@@ -909,7 +967,7 @@ input:checked + .checkbox-icon {
     padding-bottom: 2px;
 }
 
-.inner-footer {
+/*.inner-footer {
     display: flex;
     justify-content: space-between;
     align-items: baseline;
@@ -939,4 +997,4 @@ input:checked + .checkbox-icon {
 
 .inner-footer .button-site {
     top: -14px;
-}
+}*/

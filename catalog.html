@@ -31,7 +31,7 @@
               <ul class="selection-list">
                 <li class="selection-option">
                   <label>
-                    <input type="checkbox" name="pools" class="selection-text visually-hidden">Бассейн
+                    <input type="checkbox" name="pools" class="selection-text visually-hidden" disabled>Бассейн
                     <span class="checkbox-icon"></span>
                   </label>
                 </li>
@@ -76,40 +76,39 @@
               <h2 class="selection-title selection-title-form selection-title-form-third-column">Стоимость в сутки (P):</h2>
               <div class="container-for-range">  
                 <label class="selection-title selection-title-line">
-                  <input type="text" placeholder="ОТ 0">
+                  <input type="text" placeholder="ОТ 0" value="ОТ 0">
                 </label>
                 <label class="selection-title">
                   <input type="text" placeholder=" ДО 3000" value="ДО 3000">
                 </label>
                 <input type="range" class="range" min="0" max="3000">
               </div>
-              <button class="show" href="#">Показать</a>
+              <button class="show">Показать</button>
             </div>
           </div>
         </form>
       </section>
       <section class="result">
-          <p class="selection-title selection-title-sorting">Найдено: <output name="searching-result">3</output></p>
-          <p class="selection-title selection-title-sorting-small">Сортировка:
-            <label><a href="#" class="selection-text-sorting">По цене</a></label>
-            <label><a href="#" class="selection-text-sorting">По типу</a></label>
-            <label><a href="#" class="selection-text-sorting">По рейтингу</a></label>
-          </p>
-          <p class="up-and-down">
-            <a href="#" class="up-down">
-              <span class="visually-hidden">Стрелка вверх</span>
-              <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="10px" viewBox="0 0 11 10">
-                <polygon fill="#cacaca" points="5.5,0 0,10 11,10 "></polygon>
-              </svg>
-            </a>
-            <a href="#" class="up-down">
-                <span class="visually-hidden">Стрелка вниз</span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="10px" viewBox="0 0 11 10">
-                  <polyline fill="#cacaca" points="5.5,10 0,0 11,0 "></polyline>
-                </svg>
-            </a>
-          </p>
-        </form>
+        <p class="selection-title selection-title-sorting">Найдено: <output name="searching-result">3</output></p>
+        <p class="selection-title selection-title-sorting-small">Сортировка:
+          <label><a href="#" class="selection-text-sorting">По цене</a></label>
+          <label><a href="#" class="selection-text-sorting">По типу</a></label>
+          <label><a href="#" class="selection-text-sorting">По рейтингу</a></label>
+        </p>
+        <p class="up-and-down">
+          <a href="#" class="up-down">
+            <span class="visually-hidden">Стрелка вверх</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="10px" viewBox="0 0 11 10">
+              <polygon fill="currentColor" points="5.5,0 0,10 11,10 "></polygon>
+            </svg>
+          </a>
+          <a href="#" class="up-down">
+            <span class="visually-hidden">Стрелка вниз</span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="11px" height="10px" viewBox="0 0 11 10">
+              <polyline fill="currentColor" points="5.5,10 0,0 11,0 "></polyline>
+            </svg>
+          </a>
+        </p>
       </section>
       <section class="hotels">
         <ul class="hotels-list">
@@ -215,7 +214,7 @@
           </a>
         </li>
         <li>
-          <a class="button social-button" aria-label="Канал городка Седона в Youtube"href="#">
+          <a class="button social-button" aria-label="Канал городка Седона в Youtube" href="#">
             <span class="visually-hidden">Youtube</span>
             <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="16px" viewBox="0 0 20 16">
               <path fill="#FFFFFF" d="M17,0H3C1.35,0,0,1.35,0,3v10c0,1.65,1.35,3,3,3h14c1.65,0,3-1.35,3-3V3C20,1.35,18.65,0,17,0z
