@@ -380,7 +380,7 @@ input[type="radio"].visually-hidden {
 
 .adults {
     position: relative;
-    margin-right: 54px;
+    margin-right: 93px;
 }
 
 .adults input {
@@ -396,7 +396,6 @@ input[type="radio"].visually-hidden {
 
 .count-button-minus {
     margin-left: 35px;
-    background-color: transparent;
     position: absolute;
 }
 
@@ -404,18 +403,36 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #f2f2f2;
-    width: 22px;
-    height: 2px;
-    top: 18px;
-    right: 10px;
+    background-color: #766357;
+    width: 12px;
+    height: 3px;
+    top: 19px;
+    right: 16px;
     z-index: 10;
+}
+
+.count-button-minus:hover:before,
+.count-button-plus:hover:before,
+.count-button-plus:hover:after,
+.count-button-kids-minus:hover:before,
+.count-button-kids-plus:hover:before,
+.count-button-kids-plus:hover:after {
+    background-color: #000000;
+}
+
+.count-button-minus:active:before,
+.count-button-plus:active:before,
+.count-button-plus:active:after,
+.count-button-kids-minus:active:before,
+.count-button-kids-plus:active:before,
+.count-button-kids-plus:active:after {
+    background-color: #81b3d2;
+    border: none;
 }
 
 .count-button-plus {
     top: 0;
     left: 186px;
-    background-color: transparent;
     position: absolute;
 }
 
@@ -423,11 +440,11 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #f2f2f2;
-    width: 22px;
-    height: 2px;
-    top: 18px;
-    right: 10px;
+    background-color: #766357;
+    width: 11px;
+    height: 3px;
+    top: 19px;
+    right: 15px;
     z-index: 10;
 }
 
@@ -435,10 +452,10 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #f2f2f2;
-    width: 2px;
-    height: 22px;
-    top: 9px;
+    background-color: #766357;
+    width: 3px;
+    height: 11px;
+    top: 15px;
     right: 19px;
     z-index: 10;
 }
@@ -461,11 +478,11 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #f2f2f2;
-    width: 22px;
-    height: 2px;
-    top: 18px;
-    right: 10px;
+    background-color: #766357;
+    width: 12px;
+    height: 3px;
+    top: 19px;
+    right: 16px;
     z-index: 10;
 }
 
@@ -473,11 +490,11 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #f2f2f2;
-    width: 22px;
-    height: 2px;
-    top: 18px;
-    right: 10px;
+    background-color: #766357;
+    width: 11px;
+    height: 3px;
+    top: 19px;
+    right: 16px;
     z-index: 10;
 }
 
@@ -485,10 +502,10 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #f2f2f2;
-    width: 2px;
-    height: 22px;
-    top: 9px;
+    background-color: #766357;
+    width: 3px;
+    height: 11px;
+    top: 15px;
     right: 19px;
     z-index: 10;
 }
@@ -837,6 +854,74 @@ input:checked:disabled + .checkbox-icon {
 
 .range {
     display: none;
+}
+
+.selection-title-range {
+    position: relative;
+}
+
+.selection-title-range:before {
+    content: "";
+
+    position: absolute;
+    width: 306px;
+    height: 2px;
+    background-color: white;
+    z-index: 10;
+    top: 54px;
+    left: -146px;
+}
+
+.circle {
+    position: relative;
+}
+
+.circle:before {
+    content: "";
+
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    background: url("../img/filter-button.svg") no-repeat 0 0;
+    z-index: 10;
+    top: 45px;
+    left: 0px;
+}
+
+.circle:hover:before {
+    content: "";
+
+    position: absolute;
+    width: 22px;
+    height: 24px;
+    background: url("../img/filter-button.svg") no-repeat 0 0;
+    z-index: 10;
+    top: 45px;
+    left: 0px;
+}
+
+.circle:after {
+    content: "";
+
+    position: absolute;
+    width: 20px;
+    height: 22px;
+    background: url("../img/filter-button.svg") no-repeat 0 0;
+    z-index: 10;
+    top: 45px;
+    left: 251px;
+}
+
+.circle:hover:after {
+    content: "";
+
+    position: absolute;
+    width: 22px;
+    height: 24px;
+    background: url("../img/filter-button.svg") no-repeat 0 0;
+    z-index: 10;
+    top: 45px;
+    left: 251px;
 }
 
 .result {
