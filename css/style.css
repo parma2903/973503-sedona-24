@@ -59,6 +59,7 @@ input[type="radio"].visually-hidden {
     position: relative;
     z-index: 9;
 }
+
 .site-navigation {
     list-style: none;
     margin: 0;
@@ -101,9 +102,11 @@ input[type="radio"].visually-hidden {
 .left-nav {
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 0;
     margin: 0;
+    width: 50%;
+    float: left;
 }
 
 .left-nav li:first-child {
@@ -115,7 +118,9 @@ input[type="radio"].visually-hidden {
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: space-between;
+    justify-content: flex-end;
+    width: 50%;
+    float: right;
 }
 
 .right-nav li:last-child {
@@ -349,8 +354,6 @@ input[type="radio"].visually-hidden {
     box-shadow: 0 0 50px black;
 }
 
-
-
 .order-form-show {
     display: flex;
 }
@@ -358,6 +361,10 @@ input[type="radio"].visually-hidden {
 .text-container-for-form {
     display: flex;
     padding-bottom: 28px;
+}
+
+.order-info-form-calendar input {
+    margin-left: 18px;
 }
 
 .age {
@@ -368,28 +375,26 @@ input[type="radio"].visually-hidden {
 .age .text-container-for-form input {
     box-sizing: border-box;
     width: 114px;
-    margin-left: 30px;
     text-align: center;
 }
 
 .adults {
     position: relative;
-    margin-right: 58px;
+    margin-right: 54px;
 }
 
-.adults:before {
-    content: "";
+.adults input {
+margin-left: 35px;
+}
 
+.kids input {
+    margin-left: 24px;
+}
+
+.button-count {
     position: absolute;
-    background-color: #a9a9a9;
-    width: 12px;
-    height: 3px;
-    top: 18px;
-    right: 88px;
-    z-index: 10;
-    border-radius: 5px;
-}
 
+}
 .text-container-for-form input {
     box-sizing: border-box;
     width: 346px;
@@ -564,7 +569,6 @@ input[type="radio"].visually-hidden {
     border: 2px solid transparent;
     background-color: #f2f2f2;
     font-weight: normal;
-    margin-left: 18px;
 }
 
 .order-form input:hover {
