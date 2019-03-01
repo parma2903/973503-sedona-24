@@ -126,18 +126,19 @@
             </div>
             <div class="age">
               <div class="text-container-for-form">
-                <label for="adults" class="order-info-form adults">Взрослые:
-                  <button class="count-button count-button-minus"></button>
+                <label for="adults" class="order-info-form">Взрослые:</label>
+                <div class="order-info-form adults"> 
+                  <button class="count-button count-button-minus" id="adults"></button>
                   <input type="text" name="adults" id="adults" placeholder="2" pattern="[0-9]{2}">
-                  <button class="count-button count-button-plus"></button>
-                </label>
+                  <button class="count-button count-button-plus" id="adults"></button>
+                </div> 
               </div>
               <div class="text-container-for-form">
-                <label for="kids" class="order-info-form kids">Дети:
-                  <button class="count-button count-button-kids-minus"></button>
+                <label for="kids" class="order-info-form kids">Дети:</label>
+                  <button class="count-button count-button-kids-minus" id="kids"></button>
                   <input type="text" name="kids" id="kids" placeholder="0" pattern="[0-9]{2}">
-                  <button class="count-button count-button-kids-plus"></button>
-                </label>
+                  <button class="count-button count-button-kids-plus" id="kids"></button>
+                
               </div>
            </div>
             <button type="submit" class="button search-button">Найти</button>
