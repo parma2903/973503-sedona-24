@@ -67,8 +67,6 @@ input[type="radio"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    /*padding-left: 70px;
-    padding-right: 70px;*/
 }
 
 .site-navigation a {
@@ -76,6 +74,7 @@ input[type="radio"].visually-hidden {
     color: #000000;
     display: block;
     padding: 15px 0;
+    min-width: 239px;
 }
 
 .site-navigation a[href] {
@@ -110,7 +109,7 @@ input[type="radio"].visually-hidden {
 }
 
 .left-nav li:first-child {
-    margin-left: 70px;
+    margin-left: 72px;
 }
 
 .right-nav {
@@ -118,8 +117,6 @@ input[type="radio"].visually-hidden {
     display: flex;
     padding: 0;
     margin: 0;
-    justify-content: flex-end;
-    width: 50%;
     float: right;
 }
 
@@ -128,7 +125,7 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-element {
-    width: 265px;
+    width: 263px;
 }
 
 .main-header-logo {
@@ -378,13 +375,16 @@ input[type="radio"].visually-hidden {
     text-align: center;
 }
 
+.age-label {
+    margin-top: 8px;
+}
 .adults {
     position: relative;
-    margin-right: 93px;
+    margin-right: 90px;
 }
 
 .adults input {
-    margin-left: 73px;
+    margin-left: 78px;
 }
 
 .count-button {
@@ -395,7 +395,7 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-minus {
-    margin-left: 35px;
+    margin-left: 40px;
     position: absolute;
 }
 
@@ -432,7 +432,7 @@ input[type="radio"].visually-hidden {
 
 .count-button-plus {
     top: 0;
-    left: 110px;
+    left: 116px;
     position: absolute;
 }
 
@@ -465,12 +465,12 @@ input[type="radio"].visually-hidden {
 }
 
 .kids input {
-    margin-left: 63px;
+    margin-left: 66px;
 }
 
 .count-button-kids-minus {
-    left: 67px;
-    top: 0px;
+    left: 29px;
+    top: 1px;
     position: absolute;
 }
 
@@ -512,8 +512,8 @@ input[type="radio"].visually-hidden {
 
 .count-button-kids-plus {
     position: absolute;
-    left: 141px;
-    top: 0px;
+    left: 104px;
+    top: 1px;
 }
 
 .text-container-for-form input {
