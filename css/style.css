@@ -51,6 +51,7 @@ input[type="radio"].visually-hidden {
     line-height: 26px;
     font-weight: bold;
     color: #000000;
+    padding: 0 70px;
 
     background-color: #ffffff;  
 }
@@ -74,7 +75,6 @@ input[type="radio"].visually-hidden {
     color: #000000;
     display: block;
     padding: 15px 0;
-    min-width: 239px;
 }
 
 .site-navigation a[href] {
@@ -98,18 +98,20 @@ input[type="radio"].visually-hidden {
     color: rgb(245, 229, 229);
 }
 
+.left-nav-base {
+    width: 50%;
+}
+
 .left-nav {
     list-style: none;
     display: flex;
     justify-content: flex-start;
     padding: 0;
     margin: 0;
-    width: 50%;
-    float: left;
 }
 
-.left-nav li:first-child {
-    margin-left: 72px;
+.right-nav-base {
+    width: 50%;
 }
 
 .right-nav {
@@ -117,15 +119,11 @@ input[type="radio"].visually-hidden {
     display: flex;
     padding: 0;
     margin: 0;
-    float: right;
-}
-
-.right-nav li:last-child {
-    margin-right: 70px;
+    text-align: right;
 }
 
 .nav-element {
-    width: 263px;
+    flex-grow: 1;
 }
 
 .main-header-logo {
@@ -171,7 +169,7 @@ input[type="radio"].visually-hidden {
 .advantages {
     margin: 0;
     padding: 0;
-    padding: 47px 300px 40px;
+    padding: 46px 300px 37px;
 }
 
 .bgc-blue {
@@ -188,7 +186,7 @@ input[type="radio"].visually-hidden {
     padding-left: 40px;
     padding-top: 31px;
     padding-right: 40px;
-    padding-bottom: 47px;
+    padding-bottom: 43px;
     width: 33.3%;
 }
 
@@ -206,7 +204,7 @@ input[type="radio"].visually-hidden {
 .container-number {
     margin: 0;
     margin-top: 25px;
-    margin-bottom: 21px;
+    margin-bottom: 20px;
 }
 
 .page-text {
@@ -227,7 +225,7 @@ input[type="radio"].visually-hidden {
 .text-container-2 {
     box-sizing: border-box;
     padding-top: 143px;
-    padding-bottom: 69px;
+    padding-bottom: 66px;
     padding-left: 50px;
     padding-right: 50px;
     width: 33.3%;
@@ -247,7 +245,7 @@ input[type="radio"].visually-hidden {
     height: 72px;
     width: 72px;
     z-index: 10;
-    left: 154px;
+    left: 151px;
     top: -100px;
     transform: translateX(-50%);
 
@@ -265,9 +263,9 @@ input[type="radio"].visually-hidden {
 
     background: url("../img/icon-food.svg") no-repeat center;
     height: 72px;
-    width: 72px;
-    left: 152px;
-    top: -101px;
+    width: 74px;
+    left: 151px;
+    top: -99px;
     transform: translateX(-50%);
     z-index: 10;
 }
@@ -283,10 +281,10 @@ input[type="radio"].visually-hidden {
     content: "";
 
     background: url("../img/icon-present.svg") no-repeat center;
-    height: 72px;
+    height: 75px;
     width: 72px;
     left: 152px;
-    top: -101px;
+    top: -103px;
     transform: translateX(-50%);
     z-index: 10;
 }
@@ -296,7 +294,7 @@ input[type="radio"].visually-hidden {
 }
 
 .advantages-title {
-    margin-bottom: 32px;
+    margin-bottom: 31px;
 }
 
 .container-for-three {
@@ -306,7 +304,7 @@ input[type="radio"].visually-hidden {
 
 .bgc-gray {
     background-color: #eeeeee;
-    margin-bottom: 53px;
+    margin-bottom: 52px;
 }
 
 .order-title {
@@ -344,11 +342,12 @@ input[type="radio"].visually-hidden {
     flex-wrap: wrap;
     padding-left: 57px;
     padding-right: 47px;
-    padding-bottom: 56px;
+    padding-bottom: 54px;
     position: absolute;
     background: white;
     top: 100%;
     box-shadow: 0 0 50px black;
+    z-index: 0;
 }
 
 .order-form-show {
@@ -357,7 +356,7 @@ input[type="radio"].visually-hidden {
 
 .text-container-for-form {
     display: flex;
-    padding-bottom: 28px;
+    padding-bottom: 25px;
 }
 
 .order-info-form-calendar input {
@@ -366,7 +365,7 @@ input[type="radio"].visually-hidden {
 
 .age {
     display: flex;
-    padding-bottom: 25px;
+    padding-bottom: 30px;
 }
 
 .age .text-container-for-form input {
@@ -553,6 +552,7 @@ input[type="radio"].visually-hidden {
 .order-button {
     padding-top: 31px;
     padding-bottom: 30px;
+    z-index: 1;
 }
 
 .search-button {
@@ -594,8 +594,8 @@ input[type="radio"].visually-hidden {
     align-items: baseline;
     margin: 0;
     padding-left: 133px;
-    padding-top: 33px;
-    padding-bottom: 35px;
+    padding-top: 31px;
+    padding-bottom: 37px;
     padding-right: 224px;
     background: rgba(255, 255, 255, 0.9);
 }
