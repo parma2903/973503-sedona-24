@@ -14,10 +14,18 @@
           <img src="img/logo.svg" width="140" height="71" alt="Логотип Седоны">
         </a>
         <ul class="site-navigation">
-          <li><a href="info.html">Информация</a></li>
-          <li><a href="foto_video.html">Фото и видео</a></li>
-          <li><a href="map.html">Карта штата</a></li>
-          <li><a>Гостиницы</a></li>
+          <li class="left-nav-base">
+            <ul class="left-nav">
+              <li class="nav-element"><a href="info.html">Информация</a></li>
+              <li class="nav-element"><a href="foto_video.html">Фото и видео</a></li>
+            </ul>
+          </li>
+          <li class="right-nav-base">
+            <ul class="right-nav">
+              <li class="nav-element"><a href="map.html">Карта штата</a></li>
+              <li class="nav-element"><a>Гостиницы</a></li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
@@ -91,7 +99,7 @@
       <section class="result">
         <p class="selection-title selection-title-sorting">Найдено: <output name="searching-result">3</output></p>
         <p class="selection-title selection-title-sorting-small">Сортировка:
-          <label><a href="#" class="selection-text-sorting">По цене</a></label>
+          <label><a href="#" class="selection-text-sorting-first">По цене</a></label>
           <label><a href="#" class="selection-text-sorting">По типу</a></label>
           <label><a href="#" class="selection-text-sorting">По рейтингу</a></label>
         </p>
