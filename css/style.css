@@ -382,7 +382,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-form {
-    display: none;
+    display: flex;
         
     border: none;
     padding-top: 56px;
@@ -401,15 +401,12 @@ input[type="radio"].visually-hidden {
     animation-duration: 0.5s;
 }
 
-.order-form-show {
+.order-form-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: none;
 }
 
-.ofder-button:active .ofder-form {
-    display: flex;
-}
 
 @keyframes appear {
     0% {transform: translateY(-200px);}
