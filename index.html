@@ -5,7 +5,7 @@
     <title>Sedona</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -132,17 +132,17 @@
               <div class="text-container-for-form">
                 <label for="adults" class="order-info-form age-label"><span class="label-width">Взрослые:</span></label>
                 <div class="order-info-form adults"> 
-                  <button class="count-button count-button-minus"></button>
+                  <button type="button" class="count-button count-button-minus"></button>
                   <input type="text" name="adults" id="adults" placeholder="2" pattern="[0-9]{2}">
-                  <button class="count-button count-button-plus"></button>
+                  <button type="button" class="count-button count-button-plus"></button>
                 </div> 
               </div>
               <div class="text-container-for-form">
                 <label for="kids" class="order-info-form age-label"><span class="label-width">Дети:</span></label>
                 <div class="order-info-form kids">
-                  <button class="count-button count-button-kids-minus"></button>
+                  <button type="button" class="count-button count-button-kids-minus"></button>
                   <input type="text" name="kids" id="kids" placeholder="0" pattern="[0-9]{2}">
-                  <button class="count-button count-button-kids-plus"></button>
+                  <button type="button" class="count-button count-button-kids-plus"></button>
                 </div>
               </div>
             </div>
@@ -202,6 +202,6 @@
         </a>
       </p>
     </footer>
-    <script src="js/popup.js"></script>
+    <script src="js/popup.min.js"></script>
   </body>
 </html>

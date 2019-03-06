@@ -380,7 +380,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-form {
-    display: none;
+    display: flex;
         
     border: none;
     padding-top: 56px;
@@ -395,14 +395,16 @@ input[type="radio"].visually-hidden {
     -webkit-box-shadow: 0 0 10px gray;
             box-shadow: 0 0 10px gray;
     z-index: 0;
+    animation-name: appear;
+    animation-duration: 0.5s;
 }
 
 .order-form-show {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    animation-name: appear;
-    animation-duration: 0.5s;
+    display: none;
+    /*animation-name: appear;
+    animation-duration: 0.5s;*/
 }
 
 @keyframes appear {
@@ -674,7 +676,7 @@ input[type="radio"].visually-hidden {
     align-items: center;
     margin: 0;
     padding-left: 133px;
-    padding-top: 31px;
+    padding-top: 33px;
     padding-bottom: 37px;
     padding-right: 98px;
     background: rgba(255, 255, 255, 0.9);
@@ -958,7 +960,7 @@ input.selection-text:focus + span {
     position: relative;
 }
 
-.selection-title-line:after {
+.selection-title-line:before {
     content: "";
 
     position: absolute;
@@ -966,7 +968,7 @@ input.selection-text:focus + span {
     width: 2px;
     height: 22px;
     top: 5px;
-    right: -3px;
+    right: 153px;
     z-index: 10;
     border-radius: 5px;
 }
@@ -975,72 +977,45 @@ input.selection-text:focus + span {
     display: none;
 }
 
-.selection-title-range {
+.range-line {
     position: relative;
+    margin-top: 11px;
+    margin-left: 3px;
+    margin-bottom: -40px;
 }
 
-.selection-title-range:before {
+.range-line:before {
     content: "";
 
     position: absolute;
     width: 306px;
     height: 2px;
+    background-color: gray;
+    z-index: 10;
+    top: 9px;
+    left: 9px;
+}
+
+.range-line:after {
+    content: "";
+
+    position: absolute;
+    width: 254px;
+    height: 2px;
     background-color: white;
     z-index: 10;
-    top: 54px;
-    left: -146px;
+    top: 9px;
+    left: 8px;
 }
 
-.circle {
-    position: relative;
-}
-
-.circle:before {
-    content: "";
-
+.filter-circle {
     position: absolute;
-    width: 20px;
-    height: 22px;
-    background: url("../img/filter-button.svg") no-repeat 0 0;
-    z-index: 10;
-    top: 45px;
-    left: 0px;
+    left: 252px;
 }
 
-.circle:hover:before {
-    content: "";
-
-    position: absolute;
+.filter-circle:hover {
     width: 22px;
     height: 24px;
-    background: url("../img/filter-button.svg") no-repeat 0 0;
-    z-index: 10;
-    top: 45px;
-    left: 0px;
-}
-
-.circle:after {
-    content: "";
-
-    position: absolute;
-    width: 20px;
-    height: 22px;
-    background: url("../img/filter-button.svg") no-repeat 0 0;
-    z-index: 10;
-    top: 45px;
-    left: 251px;
-}
-
-.circle:hover:after {
-    content: "";
-
-    position: absolute;
-    width: 22px;
-    height: 24px;
-    background: url("../img/filter-button.svg") no-repeat 0 0;
-    z-index: 10;
-    top: 45px;
-    left: 251px;
 }
 
 .result {
