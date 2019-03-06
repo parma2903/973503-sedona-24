@@ -1,6 +1,7 @@
 var link = document.querySelector(".order-button");
 var popup = document.querySelector(".order-form");
 
+popup.classList.add("order-form-hidden");
 link.addEventListener("click", function (evt) {
 evt.preventDefault();
 popup.classList.toggle("order-form-hidden");
