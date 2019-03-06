@@ -119,6 +119,7 @@ input[type="radio"].visually-hidden {
             justify-content: flex-start;
     padding: 0;
     margin: 0;
+    margin-right: 40px;
 }
 
 .right-nav-base {
@@ -133,6 +134,7 @@ input[type="radio"].visually-hidden {
     padding: 0;
     margin: 0;
     text-align: right;
+    margin-left: 33px;
 }
 
 .nav-element {
@@ -380,7 +382,7 @@ input[type="radio"].visually-hidden {
 }
 
 .order-form {
-    display: flex;
+    display: none;
         
     border: none;
     padding-top: 56px;
@@ -402,9 +404,11 @@ input[type="radio"].visually-hidden {
 .order-form-show {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: none;
-    /*animation-name: appear;
-    animation-duration: 0.5s;*/
+    display: flex;
+}
+
+.ofder-button:active .ofder-form {
+    display: flex;
 }
 
 @keyframes appear {
