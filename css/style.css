@@ -407,7 +407,6 @@ input[type="radio"].visually-hidden {
     display: none;
 }
 
-
 @keyframes appear {
     0% {transform: translateY(-200px);}
     
@@ -585,8 +584,8 @@ input[type="radio"].visually-hidden {
     background-color: #766357;
     width: 3px;
     height: 11px;
-    top: 39%;
-    left: 39%;
+    top: 52%;
+    left: 43%;
     z-index: 10;
     -webkit-transform: translate(-50) translate(-50);
         -ms-transform: translate(-50) translate(-50);
