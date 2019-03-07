@@ -414,7 +414,7 @@ input[type="radio"].visually-hidden {
 }
 
 .label-width {
-    max-width: 93px;
+    width: 93px;
     display: block;
     margin-top: 6px;
 }
@@ -427,7 +427,8 @@ input[type="radio"].visually-hidden {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding-bottom: 27px;
+    padding-bottom: 26px;
+    margin-left: -1px;
 }
 
 .age .text-container-for-form input {
@@ -435,6 +436,7 @@ input[type="radio"].visually-hidden {
             box-sizing: border-box;
     width: 38px;
     text-align: center;
+    margin-top: 1px;
 }
 
 .age-label {
@@ -449,18 +451,19 @@ input[type="radio"].visually-hidden {
 
 .adults {
     position: relative;
-    margin-right: 53px;
+    margin-right: 54px;
 }
 
 .count-button {
     width: 38px;
     height: 38px;
     border: none;
-    background-color: #f2f2f2
+    background-color: #f2f2f2;
+    margin-top: 1px;
 }
 
 .count-button-minus {
-    margin-left: 40px;
+    margin-left: 17px;
     position: relative;
 }
 
@@ -468,11 +471,11 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #766357;
+    background-color: #a9a9a9;
     width: 12px;
     height: 3px;
-    top: 50%;
-    left: 50%;
+    top: 52%;
+    left: 53%;
     -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
@@ -506,7 +509,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #766357;
+    background-color: #a9a9a9;
     width: 11px;
     height: 3px;
     top: 50%;
@@ -521,7 +524,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #766357;
+    background-color: #a9a9a9;
     width: 3px;
     height: 11px;
     top: 50%;
@@ -539,7 +542,7 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-kids-minus {
-    margin-left: 28px;
+    margin-left: -27px;
     position: relative;
 }
 
@@ -547,7 +550,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #766357;
+    background-color: #a9a9a9;
     width: 12px;
     height: 3px;
     top: 50%;
@@ -566,7 +569,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #766357;
+    background-color: #a9a9a9;
     width: 11px;
     height: 3px;
     top: 54%;
@@ -581,7 +584,7 @@ input[type="radio"].visually-hidden {
     content: "";
 
     position: absolute;
-    background-color: #766357;
+    background-color: #a9a9a9;
     width: 3px;
     height: 11px;
     top: 52%;
@@ -598,8 +601,9 @@ input[type="radio"].visually-hidden {
     width: 346px;
     padding: 4px 10px;
     text-align: center;
-
+    
     font: inherit;
+
 }
 
 .button {
@@ -636,6 +640,7 @@ input[type="radio"].visually-hidden {
 .search-button {
     padding: 17px 195px;
     text-transform: uppercase;
+    margin-left: -1px;
 }
 
 .button-dark,
@@ -790,7 +795,7 @@ input[type="radio"].visually-hidden {
     text-align: left;
     border: 2px solid transparent;
     background-color: #f2f2f2;
-    font-weight: normal;
+    font-weight: 700;
 }
 
 .order-form input:hover {
@@ -981,7 +986,7 @@ input.selection-text:focus + span {
     position: relative;
     margin-top: 11px;
     margin-left: 3px;
-    margin-bottom: -40px;
+    margin-bottom: -11px;
 }
 
 .range-line:before {
@@ -1011,11 +1016,16 @@ input.selection-text:focus + span {
 .filter-circle {
     position: absolute;
     left: 252px;
+    z-index: 10;
 }
 
 .filter-circle:hover {
     width: 22px;
     height: 24px;
+}
+
+.filter-circle-first {
+    left: 0;
 }
 
 .result {
