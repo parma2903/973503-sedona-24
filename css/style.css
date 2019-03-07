@@ -1,10 +1,9 @@
 body {
     margin: 0;
-
-    width: 1200px;
     margin-left: auto;
     margin-right: auto;
 
+    width: 1200px;
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 14px;
     line-height: 21px;
@@ -118,7 +117,6 @@ input[type="radio"].visually-hidden {
         -ms-flex-pack: start;
             justify-content: flex-start;
     padding: 0;
-    margin: 0;
     margin-right: 40px;
 }
 
@@ -132,7 +130,6 @@ input[type="radio"].visually-hidden {
     display: -ms-flexbox;
     display: flex;
     padding: 0;
-    margin: 0;
     text-align: right;
     margin-left: 33px;
 }
@@ -161,10 +158,6 @@ input[type="radio"].visually-hidden {
     background-color: #81b3d2;
 }
 
-.banner-piture {
-    position: relative;
-}
-
 .banner:before {
     background: url("../img/welcome.svg") no-repeat center;
     position: absolute;
@@ -181,7 +174,7 @@ input[type="radio"].visually-hidden {
     position: absolute;
     content:"";
     z-index: 10;
-    bottom: 0;
+    bottom: -1px;
     left: 0;
     width: 100%;
     height: 58px;
@@ -195,11 +188,8 @@ input[type="radio"].visually-hidden {
     color: #ffffff;
 
     background-color: #81b3d2;
-
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -269,9 +259,7 @@ input[type="radio"].visually-hidden {
 
 .add-icon-first:before {
     position: absolute;
-
     content: "";
-
     background: url("../img/icon-house.svg") no-repeat center;
     height: 72px;
     width: 72px;
@@ -291,9 +279,7 @@ input[type="radio"].visually-hidden {
 
 .add-icon-second:before {
     position: absolute;
-
     content: "";
-
     background: url("../img/icon-food.svg") no-repeat center;
     height: 72px;
     width: 74px;
@@ -312,9 +298,7 @@ input[type="radio"].visually-hidden {
 
 .add-icon-third:before {
     position: absolute;
-
     content: "";
-
     background: url("../img/icon-present.svg") no-repeat center;
     height: 75px;
     width: 72px;
@@ -363,11 +347,11 @@ input[type="radio"].visually-hidden {
 
 .order-info {
     text-align: center;
-
     line-height: 24px;
 }
 
 .container-for-form {
+    position: relative;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -377,12 +361,10 @@ input[type="radio"].visually-hidden {
             flex-direction: column;
     width: 568px;
     margin: 0 auto;
-    position: relative;
 }
 
 .order-form {
     display: flex;
-        
     border: none;
     padding-top: 56px;
     -ms-flex-wrap: wrap;
@@ -413,7 +395,7 @@ input[type="radio"].visually-hidden {
 }
 
 .label-width {
-    width: 93px;
+    width: 95px;
     display: block;
     margin-top: 6px;
 }
@@ -450,7 +432,7 @@ input[type="radio"].visually-hidden {
 
 .adults {
     position: relative;
-    margin-right: 54px;
+    margin-right: 52px;
 }
 
 .count-button {
@@ -462,14 +444,13 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-minus {
-    margin-left: 17px;
     position: relative;
+    margin-left: 17px;
 }
 
 .count-button-minus:before {
-    content: "";
-
     position: absolute;
+    content: "";
     background-color: #a9a9a9;
     width: 12px;
     height: 3px;
@@ -505,9 +486,8 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-plus:before {
-    content: "";
-
     position: absolute;
+    content: "";
     background-color: #a9a9a9;
     width: 11px;
     height: 3px;
@@ -520,9 +500,8 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-plus:after {
-    content: "";
-
     position: absolute;
+    content: "";
     background-color: #a9a9a9;
     width: 3px;
     height: 11px;
@@ -541,14 +520,13 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-kids-minus {
-    margin-left: -27px;
     position: relative;
+    margin-left: -29px;
 }
 
 .count-button-kids-minus:before {
-    content: "";
-
     position: absolute;
+    content: "";
     background-color: #a9a9a9;
     width: 12px;
     height: 3px;
@@ -565,9 +543,8 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-kids-plus:before {
-    content: "";
-
     position: absolute;
+    content: "";
     background-color: #a9a9a9;
     width: 11px;
     height: 3px;
@@ -580,9 +557,8 @@ input[type="radio"].visually-hidden {
 }
 
 .count-button-kids-plus:after {
-    content: "";
-
     position: absolute;
+    content: "";
     background-color: #a9a9a9;
     width: 3px;
     height: 11px;
@@ -598,7 +574,7 @@ input[type="radio"].visually-hidden {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     width: 346px;
-    padding: 4px 10px;
+    padding: 4px 8px;
     text-align: center;
     
     font: inherit;
@@ -637,9 +613,9 @@ input[type="radio"].visually-hidden {
 }
 
 .search-button {
-    padding: 17px 195px;
     text-transform: uppercase;
-    margin-left: -1px;
+    padding: 17px 195px;
+        margin-left: -1px;
 }
 
 .button-dark,
@@ -684,6 +660,7 @@ input[type="radio"].visually-hidden {
     padding-bottom: 37px;
     padding-right: 98px;
     background: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
 }
 
 .main-footer .page-title-big {
@@ -808,9 +785,9 @@ input[type="radio"].visually-hidden {
 }
 
 .order-info-form {
+    display: flex;
     line-height: 26px;
     font-weight: bold;
-    display: flex;
 }
 
 .text-container-for-form {
@@ -818,9 +795,7 @@ input[type="radio"].visually-hidden {
     z-index: 1;
 
     display: -webkit-box;
-
     display: -ms-flexbox;
-
     display: flex;
     padding-bottom: 28px;
 }
@@ -988,27 +963,25 @@ input.selection-text:focus + span {
 }
 
 .range-line:before {
-    content: "";
-
     position: absolute;
+    content: "";
     width: 306px;
     height: 2px;
-    background-color: gray;
-    z-index: 10;
     top: 9px;
     left: 9px;
+    background-color: gray;
+    z-index: 10;
 }
 
 .range-line:after {
-    content: "";
-
     position: absolute;
+    content: "";
     width: 254px;
     height: 2px;
-    background-color: white;
-    z-index: 10;
     top: 9px;
     left: 8px;
+    background-color: white;
+    z-index: 10;
 }
 
 .filter-circle {
@@ -1045,12 +1018,12 @@ input.selection-text:focus + span {
 }
 
 .up-and-down {
+    display: flex;
     font: inherit;
 
     margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -1289,7 +1262,6 @@ input.selection-text:focus + span {
 }
 
 .hotel-rating {
-    padding: 0;
     margin: 0;
     background-color: #f2f2f2;
     padding-right: 13px;
