@@ -1246,6 +1246,10 @@ input.selection-text:focus + span {
     margin: 0;
 }
 
+.hotel-pic {
+    object-fit: contain;
+}
+
 .hotel-name {
     text-align: left;
     font-size: 21px;
